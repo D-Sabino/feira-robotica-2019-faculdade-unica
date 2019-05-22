@@ -1,25 +1,13 @@
 #include "ESP8266WiFi.h"
 
-const char *homeHtml();
-
-void stopMovement();
-
-void forward();
-
-void right();
-
-void backward();
-
-void left();
-
 WiFiServer server(10);
 
 // Right
-const int R1 = 0;
-const int R2 = 1;
+const int RF = 5;
+const int RB = 16;
 // Left
-const int L1 = 2;
-const int L2 = 3;
+const int LF = 4;
+const int LB = 0;
 
 // Wireless network settings
 const char *ssid = "Lumina";
@@ -37,14 +25,48 @@ void loop() {
         Serial.print("Endpoint Acessado: ");
         Serial.println(linea1);
 
-        if (linea1.indexOf("FRENTE") > 0) forward();
-        if (linea1.indexOf("RE") > 0) backward();
-        if (linea1.indexOf("DIREITA") > 0) right();
-        if (linea1.indexOf("ESQUERDA") > 0) left();
-        if (linea1.indexOf("PARAR") > 0) stopMovement();
+        if (linea1.indexOf("FRENTE") > 0) {
+            Serial.println("Forward");
+        }
+        if (linea1.indexOf("RE") > 0) {
+            Serial.println("Backward");
+        }
+        if (linea1.indexOf("DIREITA") > 0) {
+            Serial.println("Right");
+        }
+        if (linea1.indexOf("ESQUERDA") > 0) {
+            Serial.println("Left");
+        }
+        if (linea1.indexOf("PARAR") > 0) {
+            Serial.println("Stop");
+        }
 
         client.flush();
-        client.println(homeHtml());
+        const char *html = "HTTP/1.1 200 OK"
+                           "\nContent-Type: text/html"
+                           "\nConnection: close"
+                           "\n"
+                           "\n<!DOCTYPE HTML>"
+                           "\n<html>"
+                           "\n<head><title>Lumina Spargere</title>"
+                           "\n<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+                           "\n"
+                           "\n<style>button{background-color:#f44336border:nonecolor:whitepadding:15px 32pxtext-align:centertext-decoration:nonedisplay:inline-blockfont-size: 24px transition-duration: 0.4s}button:hover{background-color: #4CAF50  color: white}</style>"
+                           "\n</head>"
+                           "\n<body>"
+                           "\n<div style='text-align:center'>"
+                           "\n<h1 align='center'>Lumina Spargere</h1>"
+                           "\n<br />"
+                           "\n<button onClick=location.href='./?FRENTE'>FRENTE</button><br>"
+                           "\n<button onClick=location.href='./?RE'>RE</button><br>"
+                           "\n<button onClick=location.href='./?DIREITA'>DIREITA</button><br>"
+                           "\n<button onClick=location.href='./?ESQUERDA'>ESQUERDA</button><br>"
+                           "\n<button onClick=location.href='./?PARAR'>PARAR</button>"
+                           "\n<br />"
+                           "\n</div>"
+                           "\n</body>"
+                           "\n</html>";
+        client.println(html);
         Serial.println("RESPOSTA ENVIADA");
         Serial.println();
     }
@@ -53,10 +75,10 @@ void loop() {
 void setup() {
     Serial.begin(9600);
 
-    pinMode(R1, OUTPUT);
-    pinMode(R2, OUTPUT);
-    pinMode(L1, OUTPUT);
-    pinMode(L2, OUTPUT);
+    pinMode(RF, OUTPUT);
+    pinMode(RB, OUTPUT);
+    pinMode(LF, OUTPUT);
+    pinMode(LB, OUTPUT);
 
     Serial.println();
     Serial.print("CONECTANDO WIFI: ");
@@ -76,51 +98,4 @@ void setup() {
     Serial.println(WiFi.localIP());
     Serial.print("Porta:");
     Serial.println(port);
-}
-
-const char *homeHtml() {
-    return "HTTP/1.1 200 OK"
-           "\nContent-Type: text/html"
-           "\nConnection: close"
-           "\n"
-           "\n<!DOCTYPE HTML>"
-           "\n<html>"
-           "\n<head><title>Lumina Spargere</title>"
-           "\n<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
-           "\n"
-           "\n<style>button{background-color:#f44336border:nonecolor:whitepadding:15px 32pxtext-align:centertext-decoration:nonedisplay:inline-blockfont-size: 24px transition-duration: 0.4s}button:hover{background-color: #4CAF50  color: white}</style>"
-           "\n</head>"
-           "\n<body>"
-           "\n<div style='text-align:center'>"
-           "\n<h1 align='center'>Lumina Spargere</h1>"
-           "\n<br />"
-           "\n<button onClick=location.href='./?FRENTE'>FRENTE</button><br>"
-           "\n<button onClick=location.href='./?RE'>RE</button><br>"
-           "\n<button onClick=location.href='./?DIREITA'>DIREITA</button><br>"
-           "\n<button onClick=location.href='./?ESQUERDA'>ESQUERDA</button><br>"
-           "\n<button onClick=location.href='./?PARAR'>PARAR</button>"
-           "\n<br />"
-           "\n</div>"
-           "\n</body>"
-           "\n</html>";
-}
-
-void stopMovement() {
-
-}
-
-void forward() {
-
-}
-
-void right() {
-
-}
-
-void backward() {
-
-}
-
-void left() {
-
 }
