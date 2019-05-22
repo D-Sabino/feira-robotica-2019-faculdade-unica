@@ -1,6 +1,6 @@
 #include "ESP8266WiFi.h"
 
-WiFiServer server(10);
+WiFiServer server(1532);
 
 // Right
 const int RF = 5;
@@ -12,7 +12,6 @@ const int LB = 0;
 // Wireless network settings
 const char *ssid = "Lumina";
 const char *password = "15321532";
-const int port = 10;
 
 void loop() {
     WiFiClient client = server.available();
@@ -31,7 +30,7 @@ void loop() {
             digitalWrite(LF, HIGH);
             digitalWrite(LB, LOW);
         }
-        if (linea1.indexOf("RE") > 0) {
+        if (linea1.indexOf("TRAS") > 0) {
             digitalWrite(RF, LOW);
             digitalWrite(RB, HIGH);
             digitalWrite(LF, LOW);
@@ -73,7 +72,7 @@ void loop() {
                            "\n<h1 align='center'>Lumina Spargere</h1>"
                            "\n<br />"
                            "\n<button onClick=location.href='./?FRENTE'>FRENTE</button><br>"
-                           "\n<button onClick=location.href='./?RE'>RE</button><br>"
+                           "\n<button onClick=location.href='./?TRAS'>RE</button><br>"
                            "\n<button onClick=location.href='./?DIREITA'>DIREITA</button><br>"
                            "\n<button onClick=location.href='./?ESQUERDA'>ESQUERDA</button><br>"
                            "\n<button onClick=location.href='./?PARAR'>PARAR</button>"
@@ -112,5 +111,5 @@ void setup() {
     Serial.println("IP Servidor:");
     Serial.println(WiFi.localIP());
     Serial.print("Porta:");
-    Serial.println(port);
+    Serial.println(1532);
 }
