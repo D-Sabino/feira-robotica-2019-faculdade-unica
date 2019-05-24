@@ -2,20 +2,20 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_CLEAN" />
-      <config projectName="feira_de_robotica" targetName="clion_esp_wifiv2" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOADFS" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOAD" />
-      <config projectName="feira_de_robotica" targetName="DEBUG" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_PROGRAM" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_BUILD" />
+      <config projectName="feira_de_robotica" targetName="clion_esp_wifiv2" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_MONITOR" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOADFS" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_TEST" />
+      <config projectName="feira_de_robotica" targetName="DEBUG" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOAD" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_BUILD" />
+      <config projectName="feira_de_robotica" targetName="feira_de_robotica" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_BUILD_VERBOSE" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPDATE_ALL" />
-      <config projectName="feira_de_robotica" targetName="feira_de_robotica" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_MONITOR" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_CLEAN" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -25,6 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/espwifi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/espwifi.cpp" afterDir="false" />
     </list>
     <ignored path="platformio.iws" />
@@ -51,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/espwifi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+            <state relative-caret-position="22">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
             </state>
           </provider>
         </entry>
@@ -232,7 +233,6 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.Build All" />
-      <item itemvalue="CMake Application.feira_de_robotica" />
       <item itemvalue="CMake Application.PLATFORMIO_BUILD" />
       <item itemvalue="CMake Application.PLATFORMIO_BUILD_VERBOSE" />
       <item itemvalue="CMake Application.PLATFORMIO_CLEAN" />
@@ -241,8 +241,9 @@
       <item itemvalue="CMake Application.PLATFORMIO_REBUILD_PROJECT_INDEX" />
       <item itemvalue="CMake Application.PLATFORMIO_TEST" />
       <item itemvalue="CMake Application.PLATFORMIO_UPDATE" />
-      <item itemvalue="CMake Application.PLATFORMIO_UPLOAD" />
       <item itemvalue="CMake Application.PLATFORMIO_UPLOADFS" />
+      <item itemvalue="CMake Application.PLATFORMIO_UPLOAD" />
+      <item itemvalue="CMake Application.feira_de_robotica" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -258,11 +259,12 @@
       <workItem from="1558561541678" duration="2127000" />
       <workItem from="1558563729627" duration="1271000" />
       <workItem from="1558565032563" duration="1244000" />
+      <workItem from="1558651040731" duration="2199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4642000" />
+    <option name="totallyTimeSpent" value="6841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -271,13 +273,13 @@
       <window_info id="Structure" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Arduino Support" order="1" sideWeight="0.49924356" visible="true" weight="0.5788531" />
-      <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="CMake" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3297491" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50075644" side_tool="true" weight="0.5788531" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.31182796" />
-      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="CMake" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3297491" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50075644" side_tool="true" weight="0.5788531" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.31182796" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info active="true" anchor="bottom" id="Arduino Support" order="7" sideWeight="0.49924356" visible="true" weight="0.5788531" />
       <window_info anchor="right" id="GfmBrowser" order="0" />
     </layout>
   </component>
@@ -310,16 +312,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/movement.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/movement.cpp" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -329,8 +323,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/espwifi.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+        <state relative-caret-position="22">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
         </state>
       </provider>
     </entry>
