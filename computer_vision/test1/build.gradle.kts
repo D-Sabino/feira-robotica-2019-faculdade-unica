@@ -1,0 +1,20 @@
+plugins {
+    kotlin("jvm")
+    application
+    defaults.`root-module`
+    id("com.github.ben-manes.versions") version "0.21.0"
+}
+
+dependencies {
+    implementation(files("lib/opencv-410.jar"))
+    implementation(Deps.unoxCoreJvm)
+
+    implementation(JavaFxDeps.coroutinesJavaFx)
+    implementation(JavaFxDeps.tornadoFx)
+
+    TestDeps.core.forEach(::testImplementation)
+}
+
+application {
+    mainClassName = "br.com.luminaspargere.maze2d.AppKt"
+}
