@@ -9,17 +9,16 @@ import java.awt.image.BufferedImage
 import java.awt.image.DataBufferByte
 
 object VideoCapture {
-    fun feed(cameraIp: String = "http://192.168.1.4:8080/?action=stream"): Flow<BufferedImage> {
-        val video = VideoCapture(cameraIp)
+    fun feed(): Flow<Frame> {
+        val video = VideoCapture(0)
         val frame = Mat()
         return flow {
             val isVideoClosed = !video.isOpened
-            println("closed? $isVideoClosed")
             if (isVideoClosed) return@flow
 
             loop {
                 video.read(frame)
-                emit(BufferedImage(frame))
+                emit(Frame(frame, BufferedImage(frame)))
             }
         }
     }
@@ -28,10 +27,12 @@ object VideoCapture {
     private fun BufferedImage(frame: Mat): BufferedImage {
         val (width, height, channels) = Tuple3(frame.width(), frame.height(), frame.channels())
         val source = ByteArray(width * height * channels)
-        frame[0, 0, source]
+        frame.get(0, 0, source)
         val image = BufferedImage(width, height, BufferedImage.TYPE_3BYTE_BGR)
         val out = (image.raster.dataBuffer as DataBufferByte).data
         System.arraycopy(source, 0, out, 0, source.size)
         return image
     }
+
+    data class Frame(val mat: Mat, val image: BufferedImage)
 }

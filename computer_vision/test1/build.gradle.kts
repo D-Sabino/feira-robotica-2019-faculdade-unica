@@ -19,3 +19,9 @@ dependencies {
 application {
     mainClassName = "br.com.luminaspargere.maze2d.App"
 }
+
+tasks.getByName<Jar>("jar") {
+    manifest {
+        attributes("Main-Class" to "br.com.luminaspargere.maze2d.App")
+    }
+}

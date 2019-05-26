@@ -12,12 +12,12 @@ import kotlinx.coroutines.launch
 import tornadofx.*
 
 class VideoFeedView : View("Visão Computacional"), CoroutineScope by MainScope() {
-    override val root = vbox {
+    override val root = stackpane {
         imageview {
             launch {
                 VideoCapture.feed()
                         .flowOn(Dispatchers.Default)
-                        .collect { image = SwingFXUtils.toFXImage(it, null) }
+                        .collect { image = SwingFXUtils.toFXImage(it.image, null) }
             }
         }
     }
