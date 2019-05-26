@@ -1,4 +1,4 @@
-package br.com.luminaspargere.maze2d.presentation._baseclasses
+package br.com.luminaspargere.mazerunner.presentation._baseclasses
 
 import com.github.icarohs7.unoxcore.extensions.coroutines.cancelCoroutineScope
 import javafx.scene.Node

@@ -1,4 +1,4 @@
-package br.com.luminaspargere.maze2d.domain
+package br.com.luminaspargere.mazerunner.domain
 
 import arrow.core.Tuple3
 import kotlinx.coroutines.flow.Flow

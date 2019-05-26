@@ -1,7 +1,7 @@
-package br.com.luminaspargere.maze2d.presentation.videofeed
+package br.com.luminaspargere.mazerunner.presentation.videofeed
 
-import br.com.luminaspargere.maze2d.domain.VideoCapture
-import br.com.luminaspargere.maze2d.presentation._baseclasses.BaseScopedView
+import br.com.luminaspargere.mazerunner.domain.VideoCapture
+import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
 import javafx.embed.swing.SwingFXUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect

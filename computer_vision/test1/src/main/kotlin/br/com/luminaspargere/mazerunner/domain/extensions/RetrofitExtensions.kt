@@ -1,6 +1,6 @@
-package br.com.luminaspargere.maze2d.domain.extensions
+package br.com.luminaspargere.mazerunner.domain.extensions
 
-import br.com.luminaspargere.maze2d.domain.log
+import br.com.luminaspargere.mazerunner.domain.log
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

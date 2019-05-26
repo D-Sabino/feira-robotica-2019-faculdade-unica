@@ -1,8 +1,8 @@
-package br.com.luminaspargere.maze2d.presentation.main
+package br.com.luminaspargere.mazerunner.presentation.main
 
-import br.com.luminaspargere.maze2d.presentation._baseclasses.BaseScopedView
-import br.com.luminaspargere.maze2d.presentation.remotecontroller.RemoteControllerView
-import br.com.luminaspargere.maze2d.presentation.videofeed.VideoFeedView
+import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
+import br.com.luminaspargere.mazerunner.presentation.remotecontroller.RemoteControllerView
+import br.com.luminaspargere.mazerunner.presentation.videofeed.VideoFeedView
 import tornadofx.*
 
 class MainView : BaseScopedView("Visão Computacional") {

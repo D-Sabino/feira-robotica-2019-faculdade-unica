@@ -1,4 +1,4 @@
-package br.com.luminaspargere.maze2d.domain.extensions
+package br.com.luminaspargere.mazerunner.domain.extensions
 
 import javafx.event.EventTarget
 import javafx.scene.Node

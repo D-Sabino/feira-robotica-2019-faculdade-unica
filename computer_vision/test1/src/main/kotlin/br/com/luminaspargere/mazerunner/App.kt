@@ -1,10 +1,10 @@
-package br.com.luminaspargere.maze2d
+package br.com.luminaspargere.mazerunner
 
 import arrow.core.Try
-import br.com.luminaspargere.maze2d.data.api.ApiService
-import br.com.luminaspargere.maze2d.data.repository.ArduinoControlRepository
-import br.com.luminaspargere.maze2d.domain.extensions.createRetrofitService
-import br.com.luminaspargere.maze2d.presentation.main.MainView
+import br.com.luminaspargere.mazerunner.data.api.ApiService
+import br.com.luminaspargere.mazerunner.data.repository.ArduinoControlRepository
+import br.com.luminaspargere.mazerunner.domain.extensions.createRetrofitService
+import br.com.luminaspargere.mazerunner.presentation.main.MainView
 import cz.adamh.utils.NativeUtils
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope

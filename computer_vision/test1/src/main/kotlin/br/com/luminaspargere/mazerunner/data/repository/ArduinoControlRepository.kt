@@ -1,8 +1,8 @@
-package br.com.luminaspargere.maze2d.data.repository
+package br.com.luminaspargere.mazerunner.data.repository
 
 import arrow.effects.IO
-import br.com.luminaspargere.maze2d.data.api.ApiService
-import br.com.luminaspargere.maze2d.domain.Injector
+import br.com.luminaspargere.mazerunner.data.api.ApiService
+import br.com.luminaspargere.mazerunner.domain.Injector
 import com.github.icarohs7.unoxcore.sideEffectBg
 import org.koin.core.get
 

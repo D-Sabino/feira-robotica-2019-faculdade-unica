@@ -27,7 +27,7 @@ dependencies {
 }
 
 application {
-    mainClassName = "br.com.luminaspargere.maze2d.App"
+    mainClassName = "br.com.luminaspargere.mazerunner.App"
 }
 
 tasks.withType<KotlinCompile> {
@@ -36,6 +36,6 @@ tasks.withType<KotlinCompile> {
 
 tasks.getByName<Jar>("jar") {
     manifest {
-        attributes("Main-Class" to "br.com.luminaspargere.maze2d.App")
+        attributes("Main-Class" to "br.com.luminaspargere.mazerunner.App")
     }
 }

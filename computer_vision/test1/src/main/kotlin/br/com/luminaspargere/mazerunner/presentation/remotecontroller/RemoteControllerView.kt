@@ -1,12 +1,12 @@
-package br.com.luminaspargere.maze2d.presentation.remotecontroller
+package br.com.luminaspargere.mazerunner.presentation.remotecontroller
 
 import arrow.core.Try
-import br.com.luminaspargere.maze2d.data.api.ApiService
-import br.com.luminaspargere.maze2d.data.repository.ArduinoControlRepository
-import br.com.luminaspargere.maze2d.domain.Injector
-import br.com.luminaspargere.maze2d.domain.extensions.add
-import br.com.luminaspargere.maze2d.domain.extensions.createRetrofitService
-import br.com.luminaspargere.maze2d.presentation._baseclasses.BaseScopedView
+import br.com.luminaspargere.mazerunner.data.api.ApiService
+import br.com.luminaspargere.mazerunner.data.repository.ArduinoControlRepository
+import br.com.luminaspargere.mazerunner.domain.Injector
+import br.com.luminaspargere.mazerunner.domain.extensions.add
+import br.com.luminaspargere.mazerunner.domain.extensions.createRetrofitService
+import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
 import com.github.icarohs7.unoxcore.extensions.coroutines.onBackground
 import com.jfoenix.controls.JFXButton
 import com.jfoenix.controls.JFXTextField

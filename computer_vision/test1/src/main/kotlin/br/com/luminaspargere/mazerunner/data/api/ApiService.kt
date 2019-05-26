@@ -1,4 +1,4 @@
-package br.com.luminaspargere.maze2d.data.api
+package br.com.luminaspargere.mazerunner.data.api
 
 import retrofit2.http.GET
 

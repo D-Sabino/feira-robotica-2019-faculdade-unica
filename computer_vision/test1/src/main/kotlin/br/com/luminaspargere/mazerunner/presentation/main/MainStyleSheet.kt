@@ -1,4 +1,4 @@
-package br.com.luminaspargere.maze2d.presentation.main
+package br.com.luminaspargere.mazerunner.presentation.main
 
 import tornadofx.*
 
