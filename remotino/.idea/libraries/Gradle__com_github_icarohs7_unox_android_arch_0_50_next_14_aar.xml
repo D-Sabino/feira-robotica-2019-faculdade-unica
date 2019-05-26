@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.icarohs7:unox-android-arch:0.50-next.14@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/88d6741e25cf0b6b280d49ddf2b51b10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/88d6741e25cf0b6b280d49ddf2b51b10/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/com/github/icarohs7/unox-android-arch/0.50-next.14/unox-android-arch-0.50-next.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

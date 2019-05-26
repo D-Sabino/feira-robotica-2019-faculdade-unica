@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.louiscad.splitties:splitties-toast:3.0.0-alpha06@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e5b9af434c129dcbaddd12a074599dcf/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e5b9af434c129dcbaddd12a074599dcf/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.louiscad.splitties/splitties-toast/3.0.0-alpha06/5214a1c94a1b99c8e0a697df7f700e176821e917/splitties-toast-3.0.0-alpha06-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

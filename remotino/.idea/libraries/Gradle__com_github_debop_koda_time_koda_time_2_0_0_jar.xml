@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.debop.koda-time:koda-time:2.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.debop.koda-time/koda-time/2.0.0/ffa23aaad421db4a818e72fed141d72c93073c00/koda-time-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.debop.koda-time/koda-time/2.0.0/72bf72851b4f89445597f9a44abaf8da82dc0e6f/koda-time-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

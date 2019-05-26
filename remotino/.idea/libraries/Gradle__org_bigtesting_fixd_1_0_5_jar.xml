@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bigtesting:fixd:1.0.5@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bigtesting/fixd/1.0.5/3db9a081b32a69cf2a1a76464ef7ff19c22199a8/fixd-1.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bigtesting/fixd/1.0.5/2b6f646f606901da805f2fc81c299449ba180762/fixd-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

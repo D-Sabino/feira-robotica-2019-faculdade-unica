@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bigtesting:routd:1.0.7@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bigtesting/routd/1.0.7/8197067af36660714abde58239b57bd8daceaebe/routd-1.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bigtesting/routd/1.0.7/b378ba37415408383f15e7a6ad569c59b0ec4217/routd-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

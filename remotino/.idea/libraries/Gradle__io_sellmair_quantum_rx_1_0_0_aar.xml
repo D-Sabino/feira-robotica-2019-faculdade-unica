@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.sellmair:quantum-rx:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48bcf92c94610de1538bb80bb37886f8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48bcf92c94610de1538bb80bb37886f8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.sellmair/quantum-rx/1.0.0/eb59f28b71fb8e2a274f61a51da22366242b0545/quantum-rx-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

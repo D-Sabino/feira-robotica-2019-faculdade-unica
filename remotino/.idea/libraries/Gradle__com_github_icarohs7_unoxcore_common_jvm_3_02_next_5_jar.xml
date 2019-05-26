@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.icarohs7:unoxcore-common-jvm:3.02-next.5@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/com/github/icarohs7/unoxcore-common-jvm/3.02-next.5/unoxcore-common-jvm-3.02-next.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/com/github/icarohs7/unoxcore-common-jvm/3.02-next.5/unoxcore-common-jvm-3.02-next.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

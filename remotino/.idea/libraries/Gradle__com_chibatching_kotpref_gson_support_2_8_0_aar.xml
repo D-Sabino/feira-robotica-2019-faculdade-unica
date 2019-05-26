@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.chibatching.kotpref:gson-support:2.8.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5116e1c91671d60aecdb729ba895936/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5116e1c91671d60aecdb729ba895936/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.chibatching.kotpref/gson-support/2.8.0/f292d48166375b748140e194b045806eb8a7c68f/gson-support-2.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.sellmair:disposer:2.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d604c376cb9a9f942624a63eac121d8b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d604c376cb9a9f942624a63eac121d8b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.sellmair/disposer/2.0.0/31f8ce2efb100923fa0d8d96edb37bf4bea1c216/disposer-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

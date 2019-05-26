@@ -8,6 +8,7 @@ plugins {
 dependencies {
     implementation(fileTree("lib"))
 
+    implementation(Deps.retrofit)
     implementation(Deps.unoxCoreJvm)
 
     implementation(JavaFxDeps.coroutinesJavaFx)
