@@ -1,0 +1,19 @@
+package br.com.luminaspargere.maze2d.presentation.main
+
+import tornadofx.*
+
+class MainStyleSheet : Stylesheet() {
+    init {
+        importStylesheet("/css/ikonli.css")
+        importStylesheet("/css/jfoenix.css")
+
+        jfxButton {
+            backgroundColor += c("#5264AE")
+            unsafe("-fx-button-type", raw("RAISED"))
+        }
+    }
+
+    companion object {
+        val jfxButton by cssclass()
+    }
+}

@@ -10,7 +10,7 @@ abstract class BaseScopedView(
         title: String? = null,
         icon: Node? = null
 ) : View(title, icon), CoroutineScope by MainScope() {
-    override fun onDelete() {
+    override fun onUndock() {
         cancelCoroutineScope()
         super.onDelete()
     }

@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     kotlin("jvm")
     application
@@ -8,10 +10,17 @@ plugins {
 dependencies {
     implementation(fileTree("lib"))
 
+    implementation(Deps.koinCore)
+    implementation(Deps.okHttp)
+    implementation(Deps.okHttpLoggingInterceptor)
     implementation(Deps.retrofit)
     implementation(Deps.unoxCoreJvm)
 
     implementation(JavaFxDeps.coroutinesJavaFx)
+    implementation(JavaFxDeps.ikonliJavaFx)
+    implementation(JavaFxDeps.ikonliMaterialIcons)
+    implementation(JavaFxDeps.ikonliMaterialDesign)
+    implementation(JavaFxDeps.jFoenix)
     implementation(JavaFxDeps.tornadoFx)
 
     TestDeps.core.forEach(::testImplementation)
@@ -19,6 +28,10 @@ dependencies {
 
 application {
     mainClassName = "br.com.luminaspargere.maze2d.App"
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
 }
 
 tasks.getByName<Jar>("jar") {
