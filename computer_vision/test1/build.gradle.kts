@@ -6,7 +6,8 @@ plugins {
 }
 
 dependencies {
-    implementation(files("lib/opencv-410.jar"))
+    implementation(fileTree("lib"))
+
     implementation(Deps.unoxCoreJvm)
 
     implementation(JavaFxDeps.coroutinesJavaFx)
@@ -16,5 +17,5 @@ dependencies {
 }
 
 application {
-    mainClassName = "br.com.luminaspargere.maze2d.AppKt"
+    mainClassName = "br.com.luminaspargere.maze2d.App"
 }
