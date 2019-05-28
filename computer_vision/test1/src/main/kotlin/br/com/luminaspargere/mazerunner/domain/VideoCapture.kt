@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage
 import java.awt.image.DataBufferByte
 
 object VideoCapture {
-    fun feed(): Flow<Frame> {
+    fun feed(videoTransform: Mat.() -> Mat = { this }): Flow<Frame> {
         val video = VideoCapture(0)
         val frame = Mat()
         return flow {
@@ -17,9 +17,16 @@ object VideoCapture {
             if (isVideoClosed) return@flow
 
             loop {
-                video.read(frame)
-                emit(Frame(frame, BufferedImage(frame)))
+                val transformed = frame.videoTransform()
+                video.read(transformed)
+                emit(Frame(transformed, BufferedImage(transformed)))
             }
+        }
+    }
+
+    fun detectBlueItens(): Flow<Frame> {
+        return feed {
+
         }
     }
 

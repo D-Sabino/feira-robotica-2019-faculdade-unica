@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj"
-  "CMakeFiles/feira_de_robotica.dir/src/gui.cpp.obj"
-  "CMakeFiles/feira_de_robotica.dir/src/movement.cpp.obj"
   "feira_de_robotica.pdb"
   "feira_de_robotica.exe"
   "feira_de_robotica.exe.manifest"

@@ -58,10 +58,10 @@ RM = C:\Users\icaro\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\191.7141.37\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica
+CMAKE_SOURCE_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/PLATFORMIO_UPLOADFS.dir
@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_d
 CMakeFiles/PLATFORMIO_UPLOADFS.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPLOADFS.dir\build.make CMakeFiles/PLATFORMIO_UPLOADFS.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPLOADFS.dir\build.make CMakeFiles/PLATFORMIO_UPLOADFS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_UPLOADFS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_UPLOADFS"
 .PHONY : CMakeFiles/PLATFORMIO_UPLOADFS.dir/all
 
 # Include target in all.
@@ -80,9 +80,9 @@ all: CMakeFiles/PLATFORMIO_UPLOADFS.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_UPLOADFS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_UPLOADFS.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_UPLOADFS.dir/rule
 
 # Convenience name for target.
@@ -107,7 +107,7 @@ clean: CMakeFiles/PLATFORMIO_UPLOADFS.dir/clean
 CMakeFiles/PLATFORMIO_BUILD.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_BUILD.dir\build.make CMakeFiles/PLATFORMIO_BUILD.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_BUILD.dir\build.make CMakeFiles/PLATFORMIO_BUILD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_BUILD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_BUILD"
 .PHONY : CMakeFiles/PLATFORMIO_BUILD.dir/all
 
 # Include target in all.
@@ -117,9 +117,9 @@ all: CMakeFiles/PLATFORMIO_BUILD.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_BUILD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_BUILD.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_BUILD.dir/rule
 
 # Convenience name for target.
@@ -144,7 +144,7 @@ clean: CMakeFiles/PLATFORMIO_BUILD.dir/clean
 CMakeFiles/PLATFORMIO_CLEAN.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_CLEAN.dir\build.make CMakeFiles/PLATFORMIO_CLEAN.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_CLEAN.dir\build.make CMakeFiles/PLATFORMIO_CLEAN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_CLEAN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_CLEAN"
 .PHONY : CMakeFiles/PLATFORMIO_CLEAN.dir/all
 
 # Include target in all.
@@ -154,9 +154,9 @@ all: CMakeFiles/PLATFORMIO_CLEAN.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_CLEAN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_CLEAN.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_CLEAN.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ clean: CMakeFiles/PLATFORMIO_CLEAN.dir/clean
 CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_BUILD_VERBOSE.dir\build.make CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_BUILD_VERBOSE.dir\build.make CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_BUILD_VERBOSE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_BUILD_VERBOSE"
 .PHONY : CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/all
 
 # Include target in all.
@@ -191,9 +191,9 @@ all: CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/rule
 
 # Convenience name for target.
@@ -218,7 +218,7 @@ clean: CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/clean
 CMakeFiles/feira_de_robotica.dir/all:
 	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/depend
 	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target feira_de_robotica"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target feira_de_robotica"
 .PHONY : CMakeFiles/feira_de_robotica.dir/all
 
 # Include target in all.
@@ -228,9 +228,9 @@ all: CMakeFiles/feira_de_robotica.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/feira_de_robotica.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/feira_de_robotica.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/feira_de_robotica.dir/rule
 
 # Convenience name for target.
@@ -255,7 +255,7 @@ clean: CMakeFiles/feira_de_robotica.dir/clean
 CMakeFiles/PLATFORMIO_UPLOAD.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPLOAD.dir\build.make CMakeFiles/PLATFORMIO_UPLOAD.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPLOAD.dir\build.make CMakeFiles/PLATFORMIO_UPLOAD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_UPLOAD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_UPLOAD"
 .PHONY : CMakeFiles/PLATFORMIO_UPLOAD.dir/all
 
 # Include target in all.
@@ -265,9 +265,9 @@ all: CMakeFiles/PLATFORMIO_UPLOAD.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_UPLOAD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_UPLOAD.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_UPLOAD.dir/rule
 
 # Convenience name for target.
@@ -292,7 +292,7 @@ clean: CMakeFiles/PLATFORMIO_UPLOAD.dir/clean
 CMakeFiles/PLATFORMIO_MONITOR.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_MONITOR.dir\build.make CMakeFiles/PLATFORMIO_MONITOR.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_MONITOR.dir\build.make CMakeFiles/PLATFORMIO_MONITOR.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_MONITOR"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_MONITOR"
 .PHONY : CMakeFiles/PLATFORMIO_MONITOR.dir/all
 
 # Include target in all.
@@ -302,9 +302,9 @@ all: CMakeFiles/PLATFORMIO_MONITOR.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_MONITOR.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_MONITOR.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_MONITOR.dir/rule
 
 # Convenience name for target.
@@ -329,7 +329,7 @@ clean: CMakeFiles/PLATFORMIO_MONITOR.dir/clean
 CMakeFiles/PLATFORMIO_TEST.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_TEST.dir\build.make CMakeFiles/PLATFORMIO_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_TEST.dir\build.make CMakeFiles/PLATFORMIO_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_TEST"
 .PHONY : CMakeFiles/PLATFORMIO_TEST.dir/all
 
 # Include target in all.
@@ -339,9 +339,9 @@ all: CMakeFiles/PLATFORMIO_TEST.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_TEST.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_TEST.dir/rule
 
 # Convenience name for target.
@@ -366,7 +366,7 @@ clean: CMakeFiles/PLATFORMIO_TEST.dir/clean
 CMakeFiles/PLATFORMIO_PROGRAM.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_PROGRAM.dir\build.make CMakeFiles/PLATFORMIO_PROGRAM.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_PROGRAM.dir\build.make CMakeFiles/PLATFORMIO_PROGRAM.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_PROGRAM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_PROGRAM"
 .PHONY : CMakeFiles/PLATFORMIO_PROGRAM.dir/all
 
 # Include target in all.
@@ -376,9 +376,9 @@ all: CMakeFiles/PLATFORMIO_PROGRAM.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_PROGRAM.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_PROGRAM.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_PROGRAM.dir/rule
 
 # Convenience name for target.
@@ -403,7 +403,7 @@ clean: CMakeFiles/PLATFORMIO_PROGRAM.dir/clean
 CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPDATE_ALL.dir\build.make CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPDATE_ALL.dir\build.make CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_UPDATE_ALL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_UPDATE_ALL"
 .PHONY : CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/all
 
 # Include target in all.
@@ -413,9 +413,9 @@ all: CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/rule
 
 # Convenience name for target.
@@ -440,7 +440,7 @@ clean: CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/clean
 CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/all:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_REBUILD_PROJECT_INDEX.dir\build.make CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/depend
 	$(MAKE) -f CMakeFiles\PLATFORMIO_REBUILD_PROJECT_INDEX.dir\build.make CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_REBUILD_PROJECT_INDEX"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num= "Built target PLATFORMIO_REBUILD_PROJECT_INDEX"
 .PHONY : CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/all
 
 # Include target in all.
@@ -450,9 +450,9 @@ all: CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/rule
 
 # Convenience name for target.

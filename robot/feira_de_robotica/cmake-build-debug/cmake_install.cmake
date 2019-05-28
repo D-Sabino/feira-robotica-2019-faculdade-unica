@@ -1,4 +1,4 @@
-# Install script for directory: C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica
+# Install script for directory: C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

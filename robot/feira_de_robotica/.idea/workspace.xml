@@ -2,20 +2,20 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_PROGRAM" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_CLEAN" />
       <config projectName="feira_de_robotica" targetName="clion_esp_wifiv2" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_MONITOR" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOADFS" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_TEST" />
-      <config projectName="feira_de_robotica" targetName="DEBUG" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOAD" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOAD" />
+      <config projectName="feira_de_robotica" targetName="DEBUG" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_PROGRAM" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_BUILD" />
-      <config projectName="feira_de_robotica" targetName="feira_de_robotica" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_TEST" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_BUILD_VERBOSE" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPDATE_ALL" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_CLEAN" />
+      <config projectName="feira_de_robotica" targetName="feira_de_robotica" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_MONITOR" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -24,10 +24,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/espwifi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/espwifi.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="" />
     <ignored path="platformio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -52,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/espwifi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="3036">
+              <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
             </state>
           </provider>
         </entry>
@@ -69,7 +66,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -86,6 +83,7 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="252" />
     <option name="y" value="21" />
@@ -115,25 +113,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="feira_de_robotica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feira_de_robotica" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feira_de_robotica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feira_de_robotica" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
@@ -260,11 +240,12 @@
       <workItem from="1558563729627" duration="1271000" />
       <workItem from="1558565032563" duration="1244000" />
       <workItem from="1558651040731" duration="2199000" />
+      <workItem from="1558994700364" duration="3135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6841000" />
+    <option name="totallyTimeSpent" value="9976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -279,7 +260,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50075644" side_tool="true" weight="0.5788531" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.31182796" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Arduino Support" order="7" sideWeight="0.49924356" visible="true" weight="0.5788531" />
+      <window_info active="true" anchor="bottom" id="Arduino Support" order="7" sideWeight="0.49924356" visible="true" weight="0.6200717" />
       <window_info anchor="right" id="GfmBrowser" order="0" />
     </layout>
   </component>
@@ -321,10 +302,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoespressif8266/cores/esp8266/Arduino.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="218" column="60" lean-forward="true" selection-start-line="218" selection-start-column="60" selection-end-line="218" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src/ESP8266WiFi.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1348" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/espwifi.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="3036">
+          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
         </state>
       </provider>
     </entry>

@@ -42,10 +42,10 @@ RM = C:\Users\icaro\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\191.7141.37\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica
+CMAKE_SOURCE_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/feira_de_robotica.dir/depend.make
@@ -59,62 +59,30 @@ include CMakeFiles/feira_de_robotica.dir/flags.make
 CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj: CMakeFiles/feira_de_robotica.dir/flags.make
 CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj: CMakeFiles/feira_de_robotica.dir/includes_CXX.rsp
 CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj: ../src/espwifi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\feira_de_robotica.dir\src\espwifi.cpp.obj -c C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\espwifi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj"
+	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\feira_de_robotica.dir\src\espwifi.cpp.obj -c C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\src\espwifi.cpp
 
 CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.i"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\espwifi.cpp > CMakeFiles\feira_de_robotica.dir\src\espwifi.cpp.i
+	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\src\espwifi.cpp > CMakeFiles\feira_de_robotica.dir\src\espwifi.cpp.i
 
 CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.s"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\espwifi.cpp -o CMakeFiles\feira_de_robotica.dir\src\espwifi.cpp.s
-
-CMakeFiles/feira_de_robotica.dir/src/gui.cpp.obj: CMakeFiles/feira_de_robotica.dir/flags.make
-CMakeFiles/feira_de_robotica.dir/src/gui.cpp.obj: CMakeFiles/feira_de_robotica.dir/includes_CXX.rsp
-CMakeFiles/feira_de_robotica.dir/src/gui.cpp.obj: ../src/gui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/feira_de_robotica.dir/src/gui.cpp.obj"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\feira_de_robotica.dir\src\gui.cpp.obj -c C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\gui.cpp
-
-CMakeFiles/feira_de_robotica.dir/src/gui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/feira_de_robotica.dir/src/gui.cpp.i"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\gui.cpp > CMakeFiles\feira_de_robotica.dir\src\gui.cpp.i
-
-CMakeFiles/feira_de_robotica.dir/src/gui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/feira_de_robotica.dir/src/gui.cpp.s"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\gui.cpp -o CMakeFiles\feira_de_robotica.dir\src\gui.cpp.s
-
-CMakeFiles/feira_de_robotica.dir/src/movement.cpp.obj: CMakeFiles/feira_de_robotica.dir/flags.make
-CMakeFiles/feira_de_robotica.dir/src/movement.cpp.obj: CMakeFiles/feira_de_robotica.dir/includes_CXX.rsp
-CMakeFiles/feira_de_robotica.dir/src/movement.cpp.obj: ../src/movement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/feira_de_robotica.dir/src/movement.cpp.obj"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\feira_de_robotica.dir\src\movement.cpp.obj -c C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\movement.cpp
-
-CMakeFiles/feira_de_robotica.dir/src/movement.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/feira_de_robotica.dir/src/movement.cpp.i"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\movement.cpp > CMakeFiles\feira_de_robotica.dir\src\movement.cpp.i
-
-CMakeFiles/feira_de_robotica.dir/src/movement.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/feira_de_robotica.dir/src/movement.cpp.s"
-	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\src\movement.cpp -o CMakeFiles\feira_de_robotica.dir\src\movement.cpp.s
+	C:\Users\icaro\.platformio\packages\toolchain-xtensa\bin\xtensa-lx106-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\src\espwifi.cpp -o CMakeFiles\feira_de_robotica.dir\src\espwifi.cpp.s
 
 # Object files for target feira_de_robotica
 feira_de_robotica_OBJECTS = \
-"CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj" \
-"CMakeFiles/feira_de_robotica.dir/src/gui.cpp.obj" \
-"CMakeFiles/feira_de_robotica.dir/src/movement.cpp.obj"
+"CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj"
 
 # External object files for target feira_de_robotica
 feira_de_robotica_EXTERNAL_OBJECTS =
 
 feira_de_robotica.exe: CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.obj
-feira_de_robotica.exe: CMakeFiles/feira_de_robotica.dir/src/gui.cpp.obj
-feira_de_robotica.exe: CMakeFiles/feira_de_robotica.dir/src/movement.cpp.obj
 feira_de_robotica.exe: CMakeFiles/feira_de_robotica.dir/build.make
 feira_de_robotica.exe: CMakeFiles/feira_de_robotica.dir/linklibs.rsp
 feira_de_robotica.exe: CMakeFiles/feira_de_robotica.dir/objects1.rsp
 feira_de_robotica.exe: CMakeFiles/feira_de_robotica.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable feira_de_robotica.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable feira_de_robotica.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\feira_de_robotica.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +95,6 @@ CMakeFiles/feira_de_robotica.dir/clean:
 .PHONY : CMakeFiles/feira_de_robotica.dir/clean
 
 CMakeFiles/feira_de_robotica.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles\feira_de_robotica.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles\feira_de_robotica.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/feira_de_robotica.dir/depend
 

@@ -8,58 +8,58 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPLOADFS">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_BUILD">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_CLEAN">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_BUILD_VERBOSE">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD_VERBOSE"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD_VERBOSE"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="feira_de_robotica">
-				<Option output="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/feira_de_robotica.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option output="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/feira_de_robotica.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -103,8 +103,8 @@
 					<Add directory="C:/Users/icaro/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include"/>
 					<Add directory="C:/Users/icaro/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include-fixed"/>
 					<Add directory="C:/Users/icaro/.platformio/packages/tool-unity"/>
-					<Add directory="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/include"/>
-					<Add directory="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/src"/>
+					<Add directory="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/include"/>
+					<Add directory="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/src"/>
 					<Add directory="e:\software\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
 					<Add directory="e:\software\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
 					<Add directory="e:\software\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
@@ -114,15 +114,15 @@
 					<Add directory="e:\software\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 feira_de_robotica"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 feira_de_robotica"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="feira_de_robotica/fast">
-				<Option output="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/feira_de_robotica.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option output="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/feira_de_robotica.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -166,8 +166,8 @@
 					<Add directory="C:/Users/icaro/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include"/>
 					<Add directory="C:/Users/icaro/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include-fixed"/>
 					<Add directory="C:/Users/icaro/.platformio/packages/tool-unity"/>
-					<Add directory="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/include"/>
-					<Add directory="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/src"/>
+					<Add directory="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/include"/>
+					<Add directory="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/src"/>
 					<Add directory="e:\software\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
 					<Add directory="e:\software\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
 					<Add directory="e:\software\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
@@ -177,106 +177,100 @@
 					<Add directory="e:\software\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 feira_de_robotica/fast"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 feira_de_robotica/fast"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPLOAD">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_MONITOR">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_MONITOR"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_MONITOR"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_TEST">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_PROGRAM">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPDATE_ALL">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_REBUILD_PROJECT_INDEX">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug"/>
+				<Option working_dir="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Software/MinGW/bin/mingw32-make.exe -f &quot;C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/src/espwifi.cpp">
+		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/src/espwifi.cpp">
 			<Option target="feira_de_robotica"/>
 		</Unit>
-		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/src/gui.cpp">
-			<Option target="feira_de_robotica"/>
-		</Unit>
-		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/src/movement.cpp">
-			<Option target="feira_de_robotica"/>
-		</Unit>
-		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/CMakeLists.txt">
+		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/feira_de_robotica/CMakeListsPrivate.txt">
+		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/CMakeListsPrivate.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

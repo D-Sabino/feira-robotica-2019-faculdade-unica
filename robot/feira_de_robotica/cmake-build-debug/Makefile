@@ -47,10 +47,10 @@ RM = C:\Users\icaro\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\191.7141.37\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica
+CMAKE_SOURCE_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -279,60 +279,6 @@ src/espwifi.cpp.s:
 	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/src/espwifi.cpp.s
 .PHONY : src/espwifi.cpp.s
 
-src/gui.obj: src/gui.cpp.obj
-
-.PHONY : src/gui.obj
-
-# target to build an object file
-src/gui.cpp.obj:
-	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/src/gui.cpp.obj
-.PHONY : src/gui.cpp.obj
-
-src/gui.i: src/gui.cpp.i
-
-.PHONY : src/gui.i
-
-# target to preprocess a source file
-src/gui.cpp.i:
-	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/src/gui.cpp.i
-.PHONY : src/gui.cpp.i
-
-src/gui.s: src/gui.cpp.s
-
-.PHONY : src/gui.s
-
-# target to generate assembly for a file
-src/gui.cpp.s:
-	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/src/gui.cpp.s
-.PHONY : src/gui.cpp.s
-
-src/movement.obj: src/movement.cpp.obj
-
-.PHONY : src/movement.obj
-
-# target to build an object file
-src/movement.cpp.obj:
-	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/src/movement.cpp.obj
-.PHONY : src/movement.cpp.obj
-
-src/movement.i: src/movement.cpp.i
-
-.PHONY : src/movement.i
-
-# target to preprocess a source file
-src/movement.cpp.i:
-	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/src/movement.cpp.i
-.PHONY : src/movement.cpp.i
-
-src/movement.s: src/movement.cpp.s
-
-.PHONY : src/movement.s
-
-# target to generate assembly for a file
-src/movement.cpp.s:
-	$(MAKE) -f CMakeFiles\feira_de_robotica.dir\build.make CMakeFiles/feira_de_robotica.dir/src/movement.cpp.s
-.PHONY : src/movement.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -355,12 +301,6 @@ help:
 	@echo ... src/espwifi.obj
 	@echo ... src/espwifi.i
 	@echo ... src/espwifi.s
-	@echo ... src/gui.obj
-	@echo ... src/gui.i
-	@echo ... src/gui.s
-	@echo ... src/movement.obj
-	@echo ... src/movement.i
-	@echo ... src/movement.s
 .PHONY : help
 
 

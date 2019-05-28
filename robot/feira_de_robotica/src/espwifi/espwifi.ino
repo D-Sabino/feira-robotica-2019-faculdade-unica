@@ -1,4 +1,4 @@
-#include "ESP8266WiFi.h"
+#include <ESP8266WiFi.h>
 
 WiFiServer server(1532);
 
@@ -31,7 +31,7 @@ void loop() {
     //pulsos = 0;
     //Serial.print("RPM = ");
     //Serial.println(rpm, DEC);
-    Serial.printf("PULSOS -> %d\n", pulsos);
+    Serial.printf("PULSOS -> %d\n", pulsos);    
 
     if (client) { //Si hay un cliente presente
         Serial.println("Novo Cliente");
@@ -104,6 +104,15 @@ void loop() {
     }
 }
 
+void onRightEncoderInterrupt() {
+    pulsos++;
+    Serial.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+}
+
+void onLeftEncoderInterrupt() {
+    
+}
+
 void setup() {
     Serial.begin(9600);
 
@@ -111,7 +120,13 @@ void setup() {
     pinMode(RB, OUTPUT);
     pinMode(LF, OUTPUT);
     pinMode(LB, OUTPUT);
-    pinMode(ENC, INPUT);
+    pinMode(13, INPUT);
+    pinMode(12, INPUT);
+
+    attachInterrupt(digitalPinToInterrupt(ENC), onRightEncoderInterrupt, FALLING);
+    attachInterrupt(digitalPinToInterrupt(12), onRightEncoderInterrupt, FALLING);
+    attachInterrupt((ENC), onRightEncoderInterrupt, FALLING);
+    attachInterrupt((12), onRightEncoderInterrupt, FALLING);
 
     Serial.println();
     Serial.print("CONECTANDO WIFI: ");
@@ -136,6 +151,4 @@ void setup() {
     Serial.println(WiFi.localIP());
     Serial.print("Porta:");
     Serial.println(1532);
-
-    attachInterrupt(digitalPinToInterrupt(ENC), [&]() { pulsos++; }, RISING);
 }

@@ -42,10 +42,10 @@ RM = C:\Users\icaro\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\191.7141.37\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica
+CMAKE_SOURCE_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug
 
 # Utility rule file for PLATFORMIO_UPLOADFS.
 
@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_d
 include CMakeFiles/PLATFORMIO_UPLOADFS.dir/progress.make
 
 CMakeFiles/PLATFORMIO_UPLOADFS:
-	cd /d C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica && call E:\\GoogleDrive\\Atalhos\\batch\\platformio.bat -f -c clion run --target uploadfs
+	cd /d C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica && call E:\\GoogleDrive\\Atalhos\\batch\\platformio.bat -f -c clion run --target uploadfs
 
 PLATFORMIO_UPLOADFS: CMakeFiles/PLATFORMIO_UPLOADFS
 PLATFORMIO_UPLOADFS: CMakeFiles/PLATFORMIO_UPLOADFS.dir/build.make
@@ -70,6 +70,6 @@ CMakeFiles/PLATFORMIO_UPLOADFS.dir/clean:
 .PHONY : CMakeFiles/PLATFORMIO_UPLOADFS.dir/clean
 
 CMakeFiles/PLATFORMIO_UPLOADFS.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug C:\Projetos\Faculdade\inteligencia-artificial\arduino\feira_de_robotica\cmake-build-debug\CMakeFiles\PLATFORMIO_UPLOADFS.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica\cmake-build-debug\CMakeFiles\PLATFORMIO_UPLOADFS.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PLATFORMIO_UPLOADFS.dir/depend
 
