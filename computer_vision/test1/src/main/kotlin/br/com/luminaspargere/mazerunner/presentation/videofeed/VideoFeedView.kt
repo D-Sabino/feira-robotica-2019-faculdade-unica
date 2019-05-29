@@ -2,7 +2,6 @@ package br.com.luminaspargere.mazerunner.presentation.videofeed
 
 import br.com.luminaspargere.mazerunner.domain.VideoCapture
 import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
-import javafx.embed.swing.SwingFXUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flowOn
@@ -13,9 +12,9 @@ class VideoFeedView : BaseScopedView() {
     override val root = stackpane {
         imageview {
             launch {
-                VideoCapture.feed()
+                VideoCapture()
                         .flowOn(Dispatchers.Default)
-                        .collect { image = SwingFXUtils.toFXImage(it.image, null) }
+                        .collect { image = it.image }
             }
         }
     }
