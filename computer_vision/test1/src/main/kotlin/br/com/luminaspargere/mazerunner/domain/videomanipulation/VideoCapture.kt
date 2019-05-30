@@ -1,12 +1,12 @@
 package br.com.luminaspargere.mazerunner.domain.videomanipulation
 
 import br.com.luminaspargere.mazerunner.domain.loop
-import com.github.icarohs7.unoxcore.extensions.coroutines.dispatcher
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
 import org.opencv.core.Mat
 import org.opencv.videoio.VideoCapture
-import kotlin.coroutines.coroutineContext
 
 
 class VideoCapture {
@@ -16,12 +16,12 @@ class VideoCapture {
         open()
         val frame = Mat()
         return flow {
-            println("Hi from ${coroutineContext.dispatcher}")
             if (videoFeed.isOpened) loop {
                 videoFeed.read(frame)
                 emit(frame)
             }
-        }
+            close()
+        }.flowOn(Dispatchers.Default)
     }
 
     fun open() {

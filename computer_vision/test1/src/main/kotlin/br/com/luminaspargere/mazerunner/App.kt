@@ -9,9 +9,7 @@ import br.com.luminaspargere.mazerunner.domain.videomanipulation.VideoCapture
 import br.com.luminaspargere.mazerunner.presentation.main.MainView
 import cz.adamh.utils.NativeUtils
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
@@ -48,9 +46,9 @@ class App : App(MainView::class), CoroutineScope by MainScope() {
         private val videoCapture by lazy { Injector.get<VideoCapture>() }
         val imageStream: Channel<Mat> = Channel(Channel.CONFLATED)
 
-        fun startStream(scope: CoroutineScope, stream: Flow<Mat>): Job {
+        suspend fun startStream(stream: Flow<Mat>) {
             videoCapture.open()
-            return scope.launch(Dispatchers.Default) { stream.collect { imageStream.offer(it) } }
+            stream.collect { imageStream.offer(it) }
         }
     }
 }

@@ -5,6 +5,7 @@ import br.com.luminaspargere.mazerunner.domain.Injector
 import br.com.luminaspargere.mazerunner.domain.videomanipulation.VideoCapture
 import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
 import br.com.luminaspargere.mazerunner.presentation.videofeed.VideoFeedView
+import kotlinx.coroutines.launch
 import org.koin.core.inject
 import tornadofx.*
 
@@ -18,6 +19,6 @@ class MainView : BaseScopedView("Visão Computacional") {
         padding = insets(16)
         center<VideoFeedView>()
 
-        App.startStream(this@MainView, videoCapture.cameraImageFeed())
+        launch { App.startStream(videoCapture.cameraImageFeed()) }
     }
 }
