@@ -24,14 +24,7 @@ unsigned long timeold = 0;
 const int pulsos_por_volta = 20;
 
 void loop() {
-    WiFiClient client = server.available();
-
-    //rpm = (60 * 1000 / pulsos_por_volta) / (millis() - timeold) * pulsos;
-    //timeold = millis();
-    //pulsos = 0;
-    //Serial.print("RPM = ");
-    //Serial.println(rpm, DEC);
-    Serial.printf("PULSOS -> %d\n", pulsos);    
+    WiFiClient client = server.available(); 
 
     if (client) { //Si hay un cliente presente
         Serial.println("Novo Cliente");
@@ -105,7 +98,6 @@ void loop() {
 }
 
 void onRightEncoderInterrupt() {
-    pulsos++;
     Serial.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 }
 
@@ -120,13 +112,6 @@ void setup() {
     pinMode(RB, OUTPUT);
     pinMode(LF, OUTPUT);
     pinMode(LB, OUTPUT);
-    pinMode(13, INPUT);
-    pinMode(12, INPUT);
-
-    attachInterrupt(digitalPinToInterrupt(ENC), onRightEncoderInterrupt, FALLING);
-    attachInterrupt(digitalPinToInterrupt(12), onRightEncoderInterrupt, FALLING);
-    attachInterrupt((ENC), onRightEncoderInterrupt, FALLING);
-    attachInterrupt((12), onRightEncoderInterrupt, FALLING);
 
     Serial.println();
     Serial.print("CONECTANDO WIFI: ");

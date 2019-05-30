@@ -8,6 +8,7 @@ class MainStyleSheet : Stylesheet() {
         importStylesheet("/css/jfoenix.css")
 
         jfxButton {
+            textFill = c("#ffffff")
             backgroundColor += c("#5264AE")
             unsafe("-fx-button-type", raw("RAISED"))
         }
