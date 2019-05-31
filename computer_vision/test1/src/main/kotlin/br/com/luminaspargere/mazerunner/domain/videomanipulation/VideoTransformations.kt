@@ -1,13 +1,19 @@
 package br.com.luminaspargere.mazerunner.domain.videomanipulation
 
-import br.com.luminaspargere.mazerunner.domain.extensions.Scalar
-import br.com.luminaspargere.mazerunner.domain.extensions.toGrayScale
+import arrow.core.toT
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Scalar
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.hsv
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.threshHoldColorRanges
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.toGrayScale
+import br.com.luminaspargere.mazerunner.presentation._communication.Messages
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import org.opencv.core.Mat
 import org.opencv.core.Point
 import org.opencv.core.Scalar
 import org.opencv.imgproc.Imgproc
+
+val finalCameraOutput by lazy { CameraStream().get().hideForegroundColor() }
 
 fun Flow<Mat>.detectLines(): Flow<Mat> = this.map { frame ->
     val src = frame.toGrayScale()
@@ -37,8 +43,18 @@ fun Flow<Mat>.detectLines(): Flow<Mat> = this.map { frame ->
     Imgproc.HoughLinesP(dst, linesP, 1.0, Math.PI / 180, 50, 50.0, 10.0)
     for (line in 0 until linesP.rows()) {
         val l = linesP.get(line, 0)
-        Imgproc.line(cdstP, Point(l[0], l[1]), Point(l[2], l[3]), Scalar("#0000ff"), 3, Imgproc.LINE_AA, 0)
+        Imgproc.line(cdstP, Point(l[0], l[1]), Point(l[2], l[3]),
+                     Scalar("#0000ff"), 3, Imgproc.LINE_AA, 0)
     }
 
     cdstP
 }
+
+fun Flow<Mat>.hideForegroundColor(): Flow<Mat> = this.map { frame ->
+    frame.threshHoldColorRanges(
+            hsv(0, 120, 70) toT hsv(10, 255, 255),
+            hsv(170, 120, 70) toT hsv(180, 255, 255)
+    )
+}
+
+private fun show(text: String) = Messages.i(text)

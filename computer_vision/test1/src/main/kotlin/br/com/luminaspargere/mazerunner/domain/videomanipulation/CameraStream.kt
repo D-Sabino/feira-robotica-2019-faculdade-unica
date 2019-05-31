@@ -9,10 +9,10 @@ import org.opencv.core.Mat
 import org.opencv.videoio.VideoCapture
 
 
-class VideoCapture {
+class CameraStream {
     private val videoFeed by lazy { VideoCapture() }
 
-    fun cameraImageFeed(): Flow<Mat> {
+    fun get(): Flow<Mat> {
         open()
         val frame = Mat()
         return flow {
@@ -24,7 +24,7 @@ class VideoCapture {
         }.flowOn(Dispatchers.Default)
     }
 
-    fun open() {
+    private fun open() {
         videoFeed.open(0)
     }
 

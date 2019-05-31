@@ -1,5 +1,6 @@
 package br.com.luminaspargere.mazerunner.domain.extensions
 
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.toImage
 import com.github.icarohs7.unoxcore.extensions.coroutines.forEach
 import com.github.icarohs7.unoxcore.extensions.coroutines.onBackground
 import com.github.icarohs7.unoxcore.extensions.coroutines.onForeground
