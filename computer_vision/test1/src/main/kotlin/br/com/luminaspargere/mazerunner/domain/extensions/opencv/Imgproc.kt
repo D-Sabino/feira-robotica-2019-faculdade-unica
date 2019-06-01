@@ -4,6 +4,7 @@ import org.opencv.core.Mat
 import org.opencv.core.Size
 import org.opencv.imgproc.Imgproc
 
+
 fun Mat.toGrayScale(): Mat {
     return Mat { dst ->
         Imgproc.cvtColor(this, dst, Imgproc.COLOR_RGB2GRAY)

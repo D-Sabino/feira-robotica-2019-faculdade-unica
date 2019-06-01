@@ -13,6 +13,10 @@ import org.kordamp.ikonli.material.Material
 import tornadofx.*
 
 class MainView : BaseScopedView("Visão Computacional") {
+    init {
+        primaryStage.isResizable = false
+    }
+
     override val root = borderpane {
         importStylesheet(MainStyleSheet::class)
         prefWidth = DEFAULT_WIDTH

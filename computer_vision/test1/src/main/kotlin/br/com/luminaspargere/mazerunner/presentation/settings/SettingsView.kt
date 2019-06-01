@@ -15,46 +15,70 @@ class SettingsView : BaseScopedView() {
         padding = insets(10)
         alignment = Pos.CENTER
 
-        labeledSlider(Config.srcHueStart) { v ->
-            "Robot hue start: $v"
-        }
-        labeledSlider(Config.srcHueEnd) { v ->
-            "Robot hue end: $v"
-        }
-        labeledSlider(Config.srcSatStart) { v ->
-            "Robot saturation start: $v"
-        }
-        labeledSlider(Config.srcSatEnd) { v ->
-            "Robot saturation end: $v"
-        }
-        labeledSlider(Config.srcValueStart) { v ->
-            "Robot value start: $v"
-        }
-        labeledSlider(Config.srcValueEnd) { v ->
-            "Robot value end: $v"
+        vbox {
+            padding = insets(5)
+            style {
+                borderColor += box(c("#808080"))
+            }
+
+            labeledSlider(Config.srcHueStart) { v ->
+                "Robot hue start: $v"
+            }
+            labeledSlider(Config.srcSatStart) { v ->
+                "Robot saturation start: $v"
+            }
+            labeledSlider(Config.srcValueStart) { v ->
+                "Robot value start: $v"
+            }
+
+            separator {
+                padding = insets(10)
+            }
+
+            labeledSlider(Config.srcHueEnd) { v ->
+                "Robot hue end: $v"
+            }
+            labeledSlider(Config.srcSatEnd) { v ->
+                "Robot saturation end: $v"
+            }
+            labeledSlider(Config.srcValueEnd) { v ->
+                "Robot value end: $v"
+            }
         }
 
         separator {
-            padding = insets(10)
+            padding = insets(20)
         }
 
-        labeledSlider(Config.dstHueStart) { v ->
-            "Target hue start: $v"
-        }
-        labeledSlider(Config.dstHueEnd) { v ->
-            "Target hue end: $v"
-        }
-        labeledSlider(Config.dstSatStart) { v ->
-            "Target saturation start: $v"
-        }
-        labeledSlider(Config.dstSatEnd) { v ->
-            "Target saturation end: $v"
-        }
-        labeledSlider(Config.dstValueStart) { v ->
-            "Target value start: $v"
-        }
-        labeledSlider(Config.dstValueEnd) { v ->
-            "Target value end: $v"
+        vbox {
+            padding = insets(5)
+            style {
+                borderColor += box(c("#808080"))
+            }
+
+            labeledSlider(Config.dstHueStart) { v ->
+                "Target hue start: $v"
+            }
+            labeledSlider(Config.dstSatStart) { v ->
+                "Target saturation start: $v"
+            }
+            labeledSlider(Config.dstValueStart) { v ->
+                "Target value start: $v"
+            }
+
+            separator {
+                padding = insets(5)
+            }
+
+            labeledSlider(Config.dstHueEnd) { v ->
+                "Target hue end: $v"
+            }
+            labeledSlider(Config.dstSatEnd) { v ->
+                "Target saturation end: $v"
+            }
+            labeledSlider(Config.dstValueEnd) { v ->
+                "Target value end: $v"
+            }
         }
     }
 
