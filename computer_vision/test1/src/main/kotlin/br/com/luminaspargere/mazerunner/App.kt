@@ -1,9 +1,10 @@
 package br.com.luminaspargere.mazerunner
 
-import arrow.core.Try
 import br.com.luminaspargere.mazerunner.data.api.ApiService
 import br.com.luminaspargere.mazerunner.data.repository.ArduinoControlRepository
+import br.com.luminaspargere.mazerunner.domain.Config
 import br.com.luminaspargere.mazerunner.domain.extensions.createRetrofitService
+import br.com.luminaspargere.mazerunner.domain.extensions.load
 import br.com.luminaspargere.mazerunner.domain.videomanipulation.CameraStream
 import br.com.luminaspargere.mazerunner.presentation.main.MainView
 import cz.adamh.utils.NativeUtils
@@ -15,7 +16,6 @@ import org.koin.core.context.startKoin
 import org.koin.dsl.module
 import org.opencv.core.Core
 import tornadofx.App
-import java.io.FileInputStream
 import java.util.Properties
 
 class App : App(MainView::class), CoroutineScope by MainScope() {
@@ -24,7 +24,6 @@ class App : App(MainView::class), CoroutineScope by MainScope() {
 
         val props = Properties()
         GlobalScope.launch {
-            Try { props.load(FileInputStream("config.ini")) }
             startKoin {
                 modules(module {
                     single { ArduinoControlRepository() }
@@ -33,6 +32,9 @@ class App : App(MainView::class), CoroutineScope by MainScope() {
                     single { CameraStream() }
                 })
             }
+
+            props.load()
+            Config.init()
         }
     }
 }

@@ -13,8 +13,6 @@ import org.opencv.core.Point
 import org.opencv.core.Scalar
 import org.opencv.imgproc.Imgproc
 
-val finalCameraOutput by lazy { CameraStream().get().hideForegroundColor() }
-
 fun Flow<Mat>.detectLines(): Flow<Mat> = this.map { frame ->
     val src = frame.toGrayScale()
     val dst = Mat()
