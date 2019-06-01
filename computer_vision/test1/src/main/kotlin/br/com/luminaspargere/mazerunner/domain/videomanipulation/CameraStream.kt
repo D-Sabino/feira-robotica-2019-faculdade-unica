@@ -1,12 +1,10 @@
 package br.com.luminaspargere.mazerunner.domain.videomanipulation
 
-import br.com.luminaspargere.mazerunner.domain.extensions.opencv.removeNoise
 import br.com.luminaspargere.mazerunner.domain.loop
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.flow.map
 import org.opencv.core.Mat
 import org.opencv.videoio.VideoCapture
 
@@ -35,6 +33,9 @@ class CameraStream {
     }
 
     companion object {
-        val finalCameraOutput by lazy { CameraStream().get().map { it.removeNoise() } }
+        private val stream by lazy { CameraStream().get() }
+        val finalCameraOutput by lazy { stream }
+        val robotTrackingOutput by lazy { stream }
+        val targetTrackingOutput by lazy { stream }
     }
 }

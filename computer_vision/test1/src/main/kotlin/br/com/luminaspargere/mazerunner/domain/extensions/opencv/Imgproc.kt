@@ -35,3 +35,7 @@ fun Mat.blurred(ksize: Size): Mat {
 fun Mat.removeNoise(): Mat {
     return this.blurred(Size(7, 7)).bgr2hsv()
 }
+
+fun Mat.resized(width: Number, height: Number): Mat {
+    return Mat { dst -> Imgproc.resize(this, dst, Size(width.toDouble(), height.toDouble())) }
+}

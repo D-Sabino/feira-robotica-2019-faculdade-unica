@@ -13,14 +13,10 @@ import org.kordamp.ikonli.material.Material
 import tornadofx.*
 
 class MainView : BaseScopedView("Visão Computacional") {
-    private val defaultWidth = 700.0
-    private val defaultHeight = 600.0
-    private val settingsPaneWidth = 180.0
-
     override val root = borderpane {
         importStylesheet(MainStyleSheet::class)
-        prefWidth = defaultWidth
-        prefHeight = defaultHeight
+        prefWidth = DEFAULT_WIDTH
+        prefHeight = DEFAULT_HEIGHT
 
         val r = stackpane {
             minWidth = 0.0
@@ -37,15 +33,15 @@ class MainView : BaseScopedView("Visão Computacional") {
                 prefHeight = 140.0
                 var showing = false
                 action {
-                    if (showing) r.scaleX(settingsPaneWidth.toInt(), 0)
-                    else r.scaleX(0, settingsPaneWidth.toInt())
+                    if (showing) r.scaleX(SETTINGS_PANE_WIDTH.toInt(), 0)
+                    else r.scaleX(0, SETTINGS_PANE_WIDTH.toInt())
                     showing = !showing
                 }
             }
         }
 
         r.widthProperty().addListener { _, _, v ->
-            primaryStage.width = v.toDouble() + defaultWidth
+            primaryStage.width = v.toDouble() + DEFAULT_WIDTH
             println(v)
         }
 
@@ -65,5 +61,15 @@ class MainView : BaseScopedView("Visão Computacional") {
                 else keyvalue(opacityProperty(), 1)
             }
         }
+    }
+
+    companion object {
+        const val DEFAULT_WIDTH: Double = 1280.0
+        const val DEFAULT_HEIGHT: Double = 720.0
+
+        const val IMAGES_WIDTH: Double = 1000.0
+        const val IMAGES_HEIGHT: Double = 500.0
+
+        const val SETTINGS_PANE_WIDTH = 180.0
     }
 }
