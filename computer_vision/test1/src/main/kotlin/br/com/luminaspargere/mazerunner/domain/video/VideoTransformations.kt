@@ -3,7 +3,7 @@ package br.com.luminaspargere.mazerunner.domain.video
 import arrow.core.toT
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Scalar
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.hsv
-import br.com.luminaspargere.mazerunner.domain.extensions.opencv.threshHoldColorRanges
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.thresholdColorRanges
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.toGrayScale
 import br.com.luminaspargere.mazerunner.presentation._communication.Messages
 import kotlinx.coroutines.flow.Flow
@@ -49,7 +49,7 @@ fun Flow<Mat>.detectLines(): Flow<Mat> = this.map { frame ->
 }
 
 fun Flow<Mat>.hideForegroundColor(): Flow<Mat> = this.map { frame ->
-    frame.threshHoldColorRanges(
+    frame.thresholdColorRanges(
             hsv(0, 120, 70) toT hsv(10, 255, 255),
             hsv(170, 120, 70) toT hsv(180, 255, 255)
     )
