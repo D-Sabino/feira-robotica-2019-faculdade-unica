@@ -5,7 +5,6 @@ import br.com.luminaspargere.mazerunner.data.repository.ArduinoControlRepository
 import br.com.luminaspargere.mazerunner.domain.Config
 import br.com.luminaspargere.mazerunner.domain.extensions.createRetrofitService
 import br.com.luminaspargere.mazerunner.domain.extensions.load
-import br.com.luminaspargere.mazerunner.domain.videomanipulation.CameraStream
 import br.com.luminaspargere.mazerunner.presentation.main.MainView
 import cz.adamh.utils.NativeUtils
 import kotlinx.coroutines.CoroutineScope
@@ -29,7 +28,6 @@ class App : App(MainView::class), CoroutineScope by MainScope() {
                     single { ArduinoControlRepository() }
                     single { props }
                     single { createRetrofitService<ApiService>("${props.getOrDefault("address", "")}") }
-                    single { CameraStream() }
                 })
             }
 

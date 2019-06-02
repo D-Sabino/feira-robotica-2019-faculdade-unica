@@ -1,7 +1,7 @@
 package br.com.luminaspargere.mazerunner.presentation.videofeed
 
 import br.com.luminaspargere.mazerunner.domain.extensions.showOpenCvStream
-import br.com.luminaspargere.mazerunner.domain.videomanipulation.CameraStream
+import br.com.luminaspargere.mazerunner.domain.video.ProcessedOutputs
 import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
 import javafx.geometry.Pos
 import javafx.scene.layout.Priority
@@ -18,16 +18,16 @@ class VideoFeedView : BaseScopedView() {
             alignment = Pos.CENTER
 
             imageview {
-                launch { showOpenCvStream(CameraStream.robotTrackingOutput) }
+                launch { showOpenCvStream(ProcessedOutputs.robotTrackingOutput()) }
             }
 
             imageview {
-                launch { showOpenCvStream(CameraStream.targetTrackingOutput) }
+                launch { showOpenCvStream(ProcessedOutputs.targetTrackingOutput()) }
             }
         }
 
         imageview {
-            launch { showOpenCvStream(CameraStream.finalCameraOutput) }
+            launch { showOpenCvStream(ProcessedOutputs.originalOutput()) }
         }
     }
 }

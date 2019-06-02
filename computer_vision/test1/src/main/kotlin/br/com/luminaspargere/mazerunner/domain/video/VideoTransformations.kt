@@ -1,4 +1,4 @@
-package br.com.luminaspargere.mazerunner.domain.videomanipulation
+package br.com.luminaspargere.mazerunner.domain.video
 
 import arrow.core.toT
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Scalar
