@@ -1,10 +1,14 @@
 package br.com.luminaspargere.mazerunner.presentation.videofeed
 
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.markRobotAndTarget
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.resized
 import br.com.luminaspargere.mazerunner.domain.extensions.showOpenCvStream
-import br.com.luminaspargere.mazerunner.domain.video.ProcessedOutputs
+import br.com.luminaspargere.mazerunner.domain.video.CameraStream
 import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
+import br.com.luminaspargere.mazerunner.presentation.main.MainView
 import javafx.geometry.Pos
 import javafx.scene.layout.Priority
+import kotlinx.coroutines.channels.map
 import kotlinx.coroutines.launch
 import tornadofx.*
 
@@ -14,20 +18,11 @@ class VideoFeedView : BaseScopedView() {
         vgrow = Priority.ALWAYS
         hgrow = Priority.ALWAYS
 
-        vbox {
-            alignment = Pos.CENTER
-
-            imageview {
-                launch { showOpenCvStream(ProcessedOutputs.robotTrackingOutput()) }
-            }
-
-            imageview {
-                launch { showOpenCvStream(ProcessedOutputs.targetTrackingOutput()) }
-            }
-        }
-
         imageview {
-            launch { showOpenCvStream(ProcessedOutputs.originalOutput()) }
+            val stream = CameraStream.channel
+                    .map { it.resized(MainView.IMAGES_WIDTH, MainView.IMAGES_HEIGHT) }
+                    .map { it.markRobotAndTarget() }
+            launch { showOpenCvStream(stream) }
         }
     }
 }

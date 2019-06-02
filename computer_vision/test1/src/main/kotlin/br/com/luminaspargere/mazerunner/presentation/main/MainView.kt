@@ -2,6 +2,7 @@ package br.com.luminaspargere.mazerunner.presentation.main
 
 import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
 import br.com.luminaspargere.mazerunner.presentation.settings.SettingsView
+import br.com.luminaspargere.mazerunner.presentation.textoutput.TextOutputView
 import br.com.luminaspargere.mazerunner.presentation.videobuttonpanel.VideoButtonPanelView
 import br.com.luminaspargere.mazerunner.presentation.videofeed.VideoFeedView
 import javafx.geometry.Pos
@@ -22,6 +23,7 @@ class MainView : BaseScopedView("Visão Computacional") {
             prefWidth = 0.0
             opacity = 0.0
             add(SettingsView())
+            widthProperty().addListener { _, _, v -> primaryStage.width = v.toDouble() + DEFAULT_WIDTH }
         }
 
         val c = hbox {
@@ -30,15 +32,15 @@ class MainView : BaseScopedView("Visão Computacional") {
             add(VideoButtonPanelView(r))
         }
 
-        r.widthProperty().addListener { _, _, v ->
-            primaryStage.width = v.toDouble() + DEFAULT_WIDTH
+        val b = stackpane {
+            add(TextOutputView())
         }
 
         top = stackpane {}
         right = r
         center = c
         left = stackpane {}
-        bottom = stackpane {}
+        bottom = b
     }
 
 

@@ -29,7 +29,7 @@ class VideoButtonPanelView(settingsPane: Pane) : BaseScopedView() {
 
     private fun Pane.scaleX(from: Int, to: Int) {
         timeline {
-            keyframe(Duration.seconds(1.0)) {
+            keyframe(Duration.millis(500.0)) {
                 keyvalue(prefWidthProperty(), from)
                 keyvalue(prefWidthProperty(), to)
                 if (to == 0) keyvalue(opacityProperty(), 0)

@@ -10,7 +10,6 @@ class MainStyleSheet : Stylesheet() {
         jfxButton {
             textFill = c("#ffffff")
             backgroundColor += c("#5264AE")
-            unsafe("-fx-button-type", raw("RAISED"))
         }
     }
 
