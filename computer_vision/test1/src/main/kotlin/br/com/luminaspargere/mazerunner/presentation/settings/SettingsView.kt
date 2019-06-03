@@ -21,13 +21,13 @@ class SettingsView : BaseScopedView() {
                 borderColor += box(c("#808080"))
             }
 
-            labeledSlider(Config.srcHueStart) { v ->
+            labeledSlider(Config.srcHueStart, 180) { v ->
                 "Robot hue start: $v"
             }
-            labeledSlider(Config.srcSatStart) { v ->
+            labeledSlider(Config.srcSatStart, 255) { v ->
                 "Robot saturation start: $v"
             }
-            labeledSlider(Config.srcValueStart) { v ->
+            labeledSlider(Config.srcValueStart, 255) { v ->
                 "Robot value start: $v"
             }
 
@@ -35,13 +35,13 @@ class SettingsView : BaseScopedView() {
                 padding = insets(10)
             }
 
-            labeledSlider(Config.srcHueEnd) { v ->
+            labeledSlider(Config.srcHueEnd, 180) { v ->
                 "Robot hue end: $v"
             }
-            labeledSlider(Config.srcSatEnd) { v ->
+            labeledSlider(Config.srcSatEnd, 255) { v ->
                 "Robot saturation end: $v"
             }
-            labeledSlider(Config.srcValueEnd) { v ->
+            labeledSlider(Config.srcValueEnd, 255) { v ->
                 "Robot value end: $v"
             }
         }
@@ -56,13 +56,13 @@ class SettingsView : BaseScopedView() {
                 borderColor += box(c("#808080"))
             }
 
-            labeledSlider(Config.dstHueStart) { v ->
+            labeledSlider(Config.dstHueStart, 180) { v ->
                 "Target hue start: $v"
             }
-            labeledSlider(Config.dstSatStart) { v ->
+            labeledSlider(Config.dstSatStart, 255) { v ->
                 "Target saturation start: $v"
             }
-            labeledSlider(Config.dstValueStart) { v ->
+            labeledSlider(Config.dstValueStart, 255) { v ->
                 "Target value start: $v"
             }
 
@@ -70,22 +70,27 @@ class SettingsView : BaseScopedView() {
                 padding = insets(5)
             }
 
-            labeledSlider(Config.dstHueEnd) { v ->
+            labeledSlider(Config.dstHueEnd, 180) { v ->
                 "Target hue end: $v"
             }
-            labeledSlider(Config.dstSatEnd) { v ->
+            labeledSlider(Config.dstSatEnd, 255) { v ->
                 "Target saturation end: $v"
             }
-            labeledSlider(Config.dstValueEnd) { v ->
+            labeledSlider(Config.dstValueEnd, 255) { v ->
                 "Target value end: $v"
             }
         }
     }
 
-    private fun EventTarget.labeledSlider(property: ObservableValue<Number>, converter: (Number?) -> String) {
+    private fun EventTarget.labeledSlider(
+            property: ObservableValue<Number>,
+            upperBound: Number,
+            converter: (Number?) -> String
+    ) {
         label(property, converter = StringConverter { converter(it) })
-        add(JFXSlider(0.0, 255.0, property.value?.toDouble() ?: 0.0)) {
+        add(JFXSlider(0.0, upperBound.toDouble(), property.value?.toDouble() ?: 0.0)) {
             bind(property)
+            blockIncrement = 1.0
         }
     }
 }
