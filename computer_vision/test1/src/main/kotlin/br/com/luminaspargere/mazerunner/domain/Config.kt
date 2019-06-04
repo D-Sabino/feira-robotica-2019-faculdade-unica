@@ -14,6 +14,13 @@ import kotlin.reflect.KProperty
 object Config {
     private val props: Properties by Injector.inject()
 
+    val srcTipHueStart = intProperty(0)
+    val srcTipHueEnd = intProperty(0)
+    val srcTipSatStart = intProperty(0)
+    val srcTipSatEnd = intProperty(0)
+    val srcTipValueStart = intProperty(0)
+    val srcTipValueEnd = intProperty(0)
+
     val srcHueStart = intProperty(0)
     val srcHueEnd = intProperty(0)
     val srcSatStart = intProperty(0)
@@ -30,12 +37,20 @@ object Config {
 
     suspend fun init() {
         onBackground {
+            srcTipHueStart.setup(::srcTipHueStart)
+            srcTipHueEnd.setup(::srcTipHueEnd)
+            srcTipSatStart.setup(::srcTipSatStart)
+            srcTipSatEnd.setup(::srcTipSatEnd)
+            srcTipValueStart.setup(::srcTipValueStart)
+            srcTipValueEnd.setup(::srcTipValueEnd)
+
             srcHueStart.setup(::srcHueStart)
             srcHueEnd.setup(::srcHueEnd)
             srcSatStart.setup(::srcSatStart)
             srcSatEnd.setup(::srcSatEnd)
             srcValueStart.setup(::srcValueStart)
             srcValueEnd.setup(::srcValueEnd)
+
             dstHueStart.setup(::dstHueStart)
             dstHueEnd.setup(::dstHueEnd)
             dstSatStart.setup(::dstSatStart)

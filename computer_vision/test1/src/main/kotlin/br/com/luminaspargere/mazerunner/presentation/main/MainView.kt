@@ -10,20 +10,17 @@ import tornadofx.*
 
 class MainView : BaseScopedView("Visão Computacional") {
     init {
-        primaryStage.isResizable = false
+        primaryStage.isMaximized = true
     }
 
     override val root = borderpane {
         importStylesheet(MainStyleSheet::class)
-        prefWidth = DEFAULT_WIDTH
-        prefHeight = DEFAULT_HEIGHT
 
         val r = stackpane {
             minWidth = 0.0
             prefWidth = 0.0
             opacity = 0.0
             add(SettingsView())
-            widthProperty().addListener { _, _, v -> primaryStage.width = v.toDouble() + DEFAULT_WIDTH }
         }
 
         val c = hbox {
@@ -45,11 +42,8 @@ class MainView : BaseScopedView("Visão Computacional") {
 
 
     companion object {
-        const val DEFAULT_WIDTH: Double = 1280.0
-        const val DEFAULT_HEIGHT: Double = 720.0
-
-        const val IMAGES_WIDTH: Double = 1000.0
-        const val IMAGES_HEIGHT: Double = 500.0
+        const val IMAGES_WIDTH: Double = 1100.0
+        const val IMAGES_HEIGHT: Double = 600.0
 
         const val SETTINGS_PANE_WIDTH = 180.0
     }
