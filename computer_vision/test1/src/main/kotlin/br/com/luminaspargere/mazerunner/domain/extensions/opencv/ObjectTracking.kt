@@ -5,9 +5,7 @@ import arrow.core.toT
 import br.com.luminaspargere.mazerunner.domain.Config
 import javafx.beans.property.IntegerProperty
 import org.opencv.core.Mat
-import org.opencv.core.MatOfPoint
 import org.opencv.core.Scalar
-import org.opencv.imgproc.Imgproc
 
 fun Mat.activateObjectsTracking(): Mat {
     fun hsv(h: IntegerProperty, s: IntegerProperty, v: IntegerProperty): Scalar {
@@ -46,30 +44,4 @@ private fun Mat.trackObjects(range: Tuple2<Scalar, Scalar>): TrackedFrame {
     return TrackedFrame(filtered, this, contours)
 }
 
-fun Mat.getContours(): Contours {
-    val contours = arrayListOf<MatOfPoint>()
-    val hierarchy = Mat()
-    Imgproc.findContours(this, contours, hierarchy, Imgproc.RETR_CCOMP, Imgproc.CHAIN_APPROX_SIMPLE)
-    return Contours(hierarchy, contours)
-}
-
-fun Contours.getIndexes(): Sequence<Int> {
-    return sequence {
-        if (hierarchy.size().height > 0 && hierarchy.size().width > 0) {
-            var index = 0
-            while (index >= 0) {
-                yield(index)
-                index = hierarchy.get(0, index)[0].toInt()
-            }
-        }
-    }
-}
-
-fun Contours.draw(dst: Mat, lineColor: Scalar) {
-    getIndexes().forEach { index ->
-        Imgproc.drawContours(dst, contours, index, lineColor, 2)
-    }
-}
-
-data class Contours(val hierarchy: Mat, val contours: List<MatOfPoint>)
 data class TrackedFrame(val filteredFrame: Mat, val destinationFrame: Mat, val contours: Contours)
