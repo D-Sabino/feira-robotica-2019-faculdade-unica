@@ -1,15 +1,23 @@
-package br.com.luminaspargere.mazerunner.domain.extensions.opencv
+package br.com.luminaspargere.mazerunner.domain.extensions.opencv.tracking
 
 import arrow.core.Tuple2
 import arrow.core.toT
 import br.com.luminaspargere.mazerunner.domain.Config
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Scalar
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Size
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.bgr2hsv
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.blurred
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.draw
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.findContours
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.morphologicalProcessing
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.thresholdColorRanges
 import javafx.beans.property.IntegerProperty
 import org.opencv.core.Mat
 import org.opencv.core.Scalar
 
-fun Mat.activateObjectsTracking(): Mat {
+fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
     fun hsv(h: IntegerProperty, s: IntegerProperty, v: IntegerProperty): Scalar {
-        return hsv(h.get(), s.get(), v.get())
+        return br.com.luminaspargere.mazerunner.domain.extensions.opencv.hsv(h.get(), s.get(), v.get())
     }
 
     val robotTipStart = hsv(Config.srcTipHueStart, Config.srcTipSatStart, Config.srcTipValueStart)
@@ -24,6 +32,8 @@ fun Mat.activateObjectsTracking(): Mat {
     val tipTracking = trackObjects(robotTipStart toT robotTipEnd)
     val srcTracking = trackObjects(robotStart toT robotEnd)
     val dstTracking = trackObjects(targetStart toT targetEnd)
+
+    ObjectTracking.send(tipTracking, srcTracking, dstTracking)
 
     return apply {
         tipTracking.contours.draw(this, Scalar("#ff0000"))
@@ -40,8 +50,6 @@ private fun Mat.trackObjects(range: Tuple2<Scalar, Scalar>): TrackedFrame {
             .thresholdColorRanges(start toT end)
             .morphologicalProcessing()
 
-    val contours = filtered.getContours()
+    val contours = filtered.findContours()
     return TrackedFrame(filtered, this, contours)
 }
-
-data class TrackedFrame(val filteredFrame: Mat, val destinationFrame: Mat, val contours: Contours)

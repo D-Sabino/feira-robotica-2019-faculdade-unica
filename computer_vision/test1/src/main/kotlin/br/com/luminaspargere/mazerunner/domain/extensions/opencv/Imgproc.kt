@@ -1,10 +1,13 @@
 package br.com.luminaspargere.mazerunner.domain.extensions.opencv
 
+import org.opencv.core.CvType
 import org.opencv.core.Mat
 import org.opencv.core.MatOfPoint
+import org.opencv.core.MatOfPoint2f
 import org.opencv.core.Scalar
 import org.opencv.core.Size
 import org.opencv.imgproc.Imgproc
+import kotlin.math.min
 
 
 /**
@@ -40,29 +43,31 @@ fun Mat.morphologicalProcessing(): Mat {
     }
 }
 
-fun Mat.getContours(mode: Int = Imgproc.RETR_CCOMP, method: Int = Imgproc.CHAIN_APPROX_SIMPLE): Contours {
+fun Mat.findContours(mode: Int = Imgproc.RETR_CCOMP, method: Int = Imgproc.CHAIN_APPROX_NONE): List<Contour> {
     val contours = arrayListOf<MatOfPoint>()
     val hierarchy = Mat()
     Imgproc.findContours(this, contours, hierarchy, mode, method)
-    return Contours(hierarchy, contours)
+    return contours
 }
 
-fun Contours.draw(dst: Mat, lineColor: Scalar) {
-    getIndexes().forEach { index ->
-        Imgproc.drawContours(dst, contours, index, lineColor, 2)
+fun List<Contour>.draw(dst: Mat, lineColor: Scalar, indexes: List<Int> = listOf(-1)) {
+    indexes.forEach { index ->
+        Imgproc.drawContours(dst, this, index, lineColor, 2)
     }
 }
 
-fun Contours.getIndexes(): Sequence<Int> {
-    return sequence {
-        if (hierarchy.size().height > 0 && hierarchy.size().width > 0) {
-            var index = 0
-            while (index >= 0) {
-                yield(index)
-                index = hierarchy.get(0, index)[0].toInt()
-            }
-        }
+fun Contour.draw(dst: Mat, lineColor: Scalar, indexes: List<Int> = listOf(-1)) {
+    indexes.forEach { index ->
+        Imgproc.drawContours(dst, listOf(this), index, lineColor, 2)
     }
 }
 
-data class Contours(val hierarchy: Mat, val contours: List<MatOfPoint>)
+fun Contour.minDistance(other: Contour): Double {
+    return other.toArray().fold(0.0) { acc, point ->
+        val dst = MatOfPoint2f()
+        this.convertTo(dst, CvType.CV_32F)
+        min(acc, Imgproc.pointPolygonTest(dst, point, true))
+    }
+}
+
+typealias Contour = MatOfPoint
