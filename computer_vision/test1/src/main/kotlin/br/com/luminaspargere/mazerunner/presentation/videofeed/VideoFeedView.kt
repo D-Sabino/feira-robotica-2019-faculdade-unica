@@ -1,6 +1,6 @@
 package br.com.luminaspargere.mazerunner.presentation.videofeed
 
-import br.com.luminaspargere.mazerunner.domain.extensions.opencv.markRobotAndTarget
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.activateObjectsTracking
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.resized
 import br.com.luminaspargere.mazerunner.domain.extensions.showOpenCvStream
 import br.com.luminaspargere.mazerunner.domain.video.CameraStream
@@ -21,7 +21,7 @@ class VideoFeedView : BaseScopedView() {
         imageview {
             val stream = CameraStream.channel
                     .map { it.resized(MainView.IMAGES_WIDTH, MainView.IMAGES_HEIGHT) }
-                    .map { it.markRobotAndTarget() }
+                    .map { it.activateObjectsTracking() }
             launch { showOpenCvStream(stream) }
         }
     }
