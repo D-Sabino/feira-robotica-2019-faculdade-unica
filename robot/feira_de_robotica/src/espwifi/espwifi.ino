@@ -8,20 +8,10 @@ const int RB = 16;
 // Left
 const int LF = 4;
 const int LB = 0;
-// Encoder
-const int ENC = 13;
 
 // Wireless network settings
 const char *ssid = "Lumina";
 const char *password = "15321532";
-
-// --- Variáveis Globais ---
-int rpm = 0;
-int pulsos = 0;
-unsigned long timeold = 0;
-
-//Settings
-const int pulsos_por_volta = 20;
 
 void loop() {
     WiFiClient client = server.available(); 
@@ -40,21 +30,41 @@ void loop() {
             digitalWrite(RB, LOW);
             digitalWrite(LF, HIGH);
             digitalWrite(LB, LOW);
+            delay(100);
+            digitalWrite(RF, LOW);
+            digitalWrite(RB, LOW);
+            digitalWrite(LF, LOW);
+            digitalWrite(LB, LOW);
         }
         if (linea1.indexOf("TRAS") > 0) {
             digitalWrite(RF, LOW);
             digitalWrite(RB, HIGH);
             digitalWrite(LF, LOW);
             digitalWrite(LB, HIGH);
+            delay(100);
+            digitalWrite(RF, LOW);
+            digitalWrite(RB, LOW);
+            digitalWrite(LF, LOW);
+            digitalWrite(LB, LOW);
         }
         if (linea1.indexOf("DIREITA") > 0) {
             digitalWrite(RF, LOW);
             digitalWrite(RB, LOW);
             digitalWrite(LF, HIGH);
             digitalWrite(LB, LOW);
+            delay(100);
+            digitalWrite(RF, LOW);
+            digitalWrite(RB, LOW);
+            digitalWrite(LF, LOW);
+            digitalWrite(LB, LOW);
         }
         if (linea1.indexOf("ESQUERDA") > 0) {
             digitalWrite(RF, HIGH);
+            digitalWrite(RB, LOW);
+            digitalWrite(LF, LOW);
+            digitalWrite(LB, LOW);
+            delay(100);
+            digitalWrite(RF, LOW);
             digitalWrite(RB, LOW);
             digitalWrite(LF, LOW);
             digitalWrite(LB, LOW);
@@ -95,14 +105,6 @@ void loop() {
         Serial.println("RESPOSTA ENVIADA");
         Serial.println();
     }
-}
-
-void onRightEncoderInterrupt() {
-    Serial.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-}
-
-void onLeftEncoderInterrupt() {
-    
 }
 
 void setup() {

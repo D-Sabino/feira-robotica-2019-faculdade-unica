@@ -1,4 +1,4 @@
-rootProject.name = "test1"
+rootProject.name = "mazerunner"
 
 pluginManagement {
     resolutionStrategy {
