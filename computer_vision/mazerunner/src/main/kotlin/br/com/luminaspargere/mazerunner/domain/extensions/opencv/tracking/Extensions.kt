@@ -2,7 +2,9 @@ package br.com.luminaspargere.mazerunner.domain.extensions.opencv.tracking
 
 import arrow.core.Tuple2
 import arrow.core.toT
+import br.com.luminaspargere.mazerunner.data.repository.ArduinoControlRepository
 import br.com.luminaspargere.mazerunner.domain.Config
+import br.com.luminaspargere.mazerunner.domain.Injector
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Scalar
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Size
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.bgr2hsv
@@ -12,11 +14,19 @@ import br.com.luminaspargere.mazerunner.domain.extensions.opencv.findContours
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.morphologicalProcessing
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.thresholdColorRanges
 import javafx.beans.property.IntegerProperty
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import org.koin.core.inject
 import org.opencv.core.Mat
 import org.opencv.core.Scalar
 
+private val arduinoControlRepository: ArduinoControlRepository by Injector.inject()
+
 fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
-    if (!ObjectTracking.isActive) return this
+    if (!ObjectTracking.isActive) {
+        GlobalScope.launch { arduinoControlRepository.stop() }
+        return this
+    }
 
     fun hsv(h: IntegerProperty, s: IntegerProperty, v: IntegerProperty): Scalar {
         return br.com.luminaspargere.mazerunner.domain.extensions.opencv.hsv(h.get(), s.get(), v.get())
