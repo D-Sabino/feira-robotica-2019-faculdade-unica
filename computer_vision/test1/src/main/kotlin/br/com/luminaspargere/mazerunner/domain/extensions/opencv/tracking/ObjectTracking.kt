@@ -13,7 +13,7 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.koin.core.inject
-import java.lang.Math.abs
+import kotlin.math.absoluteValue
 
 object ObjectTracking : CoroutineScope by GlobalScope {
     private val arduinoControlRepository: ArduinoControlRepository by Injector.inject()
@@ -35,15 +35,19 @@ object ObjectTracking : CoroutineScope by GlobalScope {
     }
 
     private suspend fun processFrame(frames: Tuple3<TrackedFrame, TrackedFrame, TrackedFrame>) {
-        val distance = { a: TrackedFrame, b: TrackedFrame -> abs(a.contours[0].minDistance(b.contours[0])) }
+        val distance = { a: TrackedFrame, b: TrackedFrame ->
+            a.contours.map { contour ->
+                b.contours.map { contour.minDistance(it) }.min()!!
+            }.min()!!.absoluteValue
+        }
 
         val (tip, src, dst) = frames
         val tip2Dst = distance(tip, dst)
         val src2Dst = distance(src, dst)
 
+        println("src2dst => $src2Dst")
+        println("tip2dst => $tip2Dst")
         if (src2Dst > 50) {
-            println("src2dst => $src2Dst")
-            println("tip2dst => $tip2Dst")
             if (tip2Dst > (src2Dst + 25)) arduinoControlRepository.turnRight()
             else arduinoControlRepository.goForward()
         }
