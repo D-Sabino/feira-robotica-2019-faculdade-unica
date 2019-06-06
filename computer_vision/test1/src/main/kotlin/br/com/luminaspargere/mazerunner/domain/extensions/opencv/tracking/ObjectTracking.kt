@@ -18,6 +18,7 @@ import java.lang.Math.abs
 object ObjectTracking : CoroutineScope by GlobalScope {
     private val arduinoControlRepository: ArduinoControlRepository by Injector.inject()
     private val contoursChannel = Channel<Tuple3<TrackedFrame, TrackedFrame, TrackedFrame>>(1)
+    var isActive = false
 
     init {
         launch {

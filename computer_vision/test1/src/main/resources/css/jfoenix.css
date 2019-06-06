@@ -1,3 +1,7 @@
 .jfx-button {
     -jfx-button-type: RAISED
 }
+
+.jfx-toggle-button {
+    -jfx-toggle-color: blue;
+}

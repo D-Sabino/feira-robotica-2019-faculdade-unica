@@ -1,9 +1,11 @@
 package br.com.luminaspargere.mazerunner.presentation.videobuttonpanel
 
 import br.com.luminaspargere.mazerunner.domain.extensions.add
+import br.com.luminaspargere.mazerunner.domain.extensions.opencv.tracking.ObjectTracking
 import br.com.luminaspargere.mazerunner.presentation._baseclasses.BaseScopedView
 import br.com.luminaspargere.mazerunner.presentation.main.MainView
 import com.jfoenix.controls.JFXButton
+import com.jfoenix.controls.JFXToggleButton
 import javafx.geometry.Pos
 import javafx.scene.layout.Pane
 import javafx.util.Duration
@@ -14,6 +16,13 @@ import tornadofx.*
 class VideoButtonPanelView(settingsPane: Pane) : BaseScopedView() {
     override val root = vbox {
         alignment = Pos.CENTER
+        spacing = 5.0
+
+        add(JFXToggleButton()) {
+            this.selectedProperty().addListener { _, _, isActive ->
+                ObjectTracking.isActive = isActive
+            }
+        }
 
         add(JFXButton()) {
             graphic = FontIcon(Material.CHEVRON_RIGHT)

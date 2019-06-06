@@ -16,6 +16,8 @@ import org.opencv.core.Mat
 import org.opencv.core.Scalar
 
 fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
+    if (!ObjectTracking.isActive) return this
+
     fun hsv(h: IntegerProperty, s: IntegerProperty, v: IntegerProperty): Scalar {
         return br.com.luminaspargere.mazerunner.domain.extensions.opencv.hsv(h.get(), s.get(), v.get())
     }
