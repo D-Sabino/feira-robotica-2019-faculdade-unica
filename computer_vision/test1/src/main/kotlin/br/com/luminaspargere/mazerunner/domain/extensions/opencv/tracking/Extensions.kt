@@ -38,9 +38,9 @@ fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
     ObjectTracking.send(tipTracking, srcTracking, dstTracking)
 
     return apply {
-        tipTracking.contours.draw(this, Scalar("#ff0000"))
-        srcTracking.contours.draw(this, Scalar("#000000"))
-        dstTracking.contours.draw(this, Scalar("#ffff00"))
+        tipTracking.contours.draw(this, Scalar("#00ff00"))
+        srcTracking.contours.draw(this, Scalar("#ffff44"))
+        dstTracking.contours.draw(this, Scalar("#ff4444"))
     }
 }
 
