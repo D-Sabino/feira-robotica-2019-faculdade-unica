@@ -3,11 +3,11 @@
 WiFiServer server(1532);
 
 // Right
-const int RF = 5;
-const int RB = 16;
+const int RF = 16;
+const int RB = 5;
 // Left
-const int LF = 4;
-const int LB = 0;
+const int LF = 0;
+const int LB = 4;
 
 // Wireless network settings
 const char *ssid = "Lumina";
@@ -30,7 +30,7 @@ void loop() {
             digitalWrite(RB, LOW);
             digitalWrite(LF, HIGH);
             digitalWrite(LB, LOW);
-            delay(100);
+            delay(150);
             digitalWrite(RF, LOW);
             digitalWrite(RB, LOW);
             digitalWrite(LF, LOW);
@@ -41,7 +41,7 @@ void loop() {
             digitalWrite(RB, HIGH);
             digitalWrite(LF, LOW);
             digitalWrite(LB, HIGH);
-            delay(100);
+            delay(150);
             digitalWrite(RF, LOW);
             digitalWrite(RB, LOW);
             digitalWrite(LF, LOW);
@@ -49,10 +49,10 @@ void loop() {
         }
         if (linea1.indexOf("DIREITA") > 0) {
             digitalWrite(RF, LOW);
-            digitalWrite(RB, LOW);
+            digitalWrite(RB, HIGH);
             digitalWrite(LF, HIGH);
             digitalWrite(LB, LOW);
-            delay(100);
+            delay(150);
             digitalWrite(RF, LOW);
             digitalWrite(RB, LOW);
             digitalWrite(LF, LOW);
@@ -62,8 +62,8 @@ void loop() {
             digitalWrite(RF, HIGH);
             digitalWrite(RB, LOW);
             digitalWrite(LF, LOW);
-            digitalWrite(LB, LOW);
-            delay(100);
+            digitalWrite(LB, HIGH);
+            delay(150);
             digitalWrite(RF, LOW);
             digitalWrite(RB, LOW);
             digitalWrite(LF, LOW);
@@ -114,6 +114,9 @@ void setup() {
     pinMode(RB, OUTPUT);
     pinMode(LF, OUTPUT);
     pinMode(LB, OUTPUT);
+    pinMode(14, OUTPUT);
+
+    digitalWrite(14, HIGH);
 
     Serial.println();
     Serial.print("CONECTANDO WIFI: ");

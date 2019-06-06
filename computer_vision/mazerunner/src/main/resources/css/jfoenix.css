@@ -5,3 +5,7 @@
 .jfx-toggle-button {
     -jfx-toggle-color: blue;
 }
+
+.jfx-slider > .colored-track {
+    -fx-background-color: blue;
+}

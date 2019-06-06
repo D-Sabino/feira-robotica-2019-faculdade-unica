@@ -10,13 +10,11 @@ class ArduinoControlRepository {
     private val service: ApiService get() = Injector.get()
 
     suspend fun goForward(): Try<Unit> = tryBg {
-        println("forward")
-//        service.forward()
+        service.forward()
     }
 
     suspend fun turnRight(): Try<Unit> = tryBg {
-        println("right")
-//        service.right()
+        service.right()
     }
 
     suspend fun goBackward(): Try<Unit> = tryBg {
