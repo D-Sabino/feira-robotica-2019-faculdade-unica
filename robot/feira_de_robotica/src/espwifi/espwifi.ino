@@ -13,10 +13,21 @@ const int LB = 4;
 const char *ssid = "Lumina";
 const char *password = "15321532";
 
+bool isLedOn = false;
+
 void loop() {
     WiFiClient client = server.available(); 
 
     if (client) { //Si hay un cliente presente
+
+        if(isLedOn){
+            digitalWrite(14, LOW);
+            isLedOn = false;
+        } else {
+            digitalWrite(14, HIGH);
+            isLedOn = true;
+        }
+        
         Serial.println("Novo Cliente");
         while (!client.available() && client.connected()) { //esperamos hasta que hayan datos disponibles
             delay(1);
@@ -115,8 +126,6 @@ void setup() {
     pinMode(LF, OUTPUT);
     pinMode(LB, OUTPUT);
     pinMode(14, OUTPUT);
-
-    digitalWrite(14, HIGH);
 
     Serial.println();
     Serial.print("CONECTANDO WIFI: ");

@@ -50,6 +50,8 @@ object ObjectTracking : CoroutineScope by GlobalScope {
         if (src2Dst > 50) {
             if (tip2Dst > (src2Dst + 25)) arduinoControlRepository.turnRight()
             else arduinoControlRepository.goForward()
+        } else {
+            arduinoControlRepository.stop()
         }
     }
 }
