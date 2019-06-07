@@ -14,17 +14,15 @@ import br.com.luminaspargere.mazerunner.domain.extensions.opencv.findContours
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.morphologicalProcessing
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.thresholdColorRanges
 import javafx.beans.property.IntegerProperty
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import org.koin.core.inject
 import org.opencv.core.Mat
 import org.opencv.core.Scalar
 
 private val arduinoControlRepository: ArduinoControlRepository by Injector.inject()
 
-fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
+suspend fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
     if (!ObjectTracking.isActive) {
-        GlobalScope.launch { arduinoControlRepository.stop() }
+        ObjectTracking.sendNoOp()
         return this
     }
 

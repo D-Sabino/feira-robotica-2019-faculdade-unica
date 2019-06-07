@@ -32,8 +32,8 @@ object RetrofitExtensions {
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BASIC
         return OkHttpClient
                 .Builder()
-                .readTimeout(60, TimeUnit.SECONDS)
-                .connectTimeout(60, TimeUnit.SECONDS)
+                .readTimeout(3, TimeUnit.SECONDS)
+                .connectTimeout(3, TimeUnit.SECONDS)
                 .addInterceptor(loggingInterceptor)
                 .apply(clientExtraConfig)
                 .build()

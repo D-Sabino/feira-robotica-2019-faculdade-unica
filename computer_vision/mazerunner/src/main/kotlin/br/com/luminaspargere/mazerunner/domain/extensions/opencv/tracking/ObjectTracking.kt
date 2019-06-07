@@ -16,6 +16,7 @@ import org.koin.core.inject
 import kotlin.math.absoluteValue
 
 object ObjectTracking : CoroutineScope by GlobalScope {
+    private val noOpChannel = Channel<Unit>(1)
     private val arduinoControlRepository: ArduinoControlRepository by Injector.inject()
     private val contoursChannel = Channel<Tuple3<TrackedFrame, TrackedFrame, TrackedFrame>>(1)
     var isActive = false
@@ -28,6 +29,19 @@ object ObjectTracking : CoroutineScope by GlobalScope {
                 timer.await()
             }
         }
+
+        launch {
+            noOpChannel.forEach {
+                val t = GlobalScope.async { delay(400) }
+                arduinoControlRepository.turnLeft()
+                arduinoControlRepository.turnRight()
+                t.await()
+            }
+        }
+    }
+
+    fun sendNoOp() {
+        noOpChannel.offer(Unit)
     }
 
     fun send(srcTipFrame: TrackedFrame, srcFrame: TrackedFrame, dstFrame: TrackedFrame) {
