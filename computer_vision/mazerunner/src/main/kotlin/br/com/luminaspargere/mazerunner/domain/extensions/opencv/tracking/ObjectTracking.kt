@@ -24,8 +24,9 @@ object ObjectTracking : CoroutineScope by GlobalScope {
     init {
         launch {
             contoursChannel.forEach {
-                val timer = async { delay(200) }
-                Try { processFrame(it) }
+                val timer = async { delay(300) }
+                val res = Try { processFrame(it) }
+                if (res.isFailure()) sendNoOp()
                 timer.await()
             }
         }
@@ -61,11 +62,11 @@ object ObjectTracking : CoroutineScope by GlobalScope {
 
         println("src2dst => $src2Dst")
         println("tip2dst => $tip2Dst")
-        if (src2Dst > 50) {
-            if (tip2Dst > (src2Dst + 25)) arduinoControlRepository.turnRight()
+        if (src2Dst > 75) {
+            if (tip2Dst > (src2Dst + 35)) arduinoControlRepository.turnRight()
             else arduinoControlRepository.goForward()
         } else {
-            arduinoControlRepository.stop()
+            throw NullPointerException()
         }
     }
 }
