@@ -6,9 +6,7 @@ import br.com.luminaspargere.mazerunner.data.repository.ArduinoControlRepository
 import br.com.luminaspargere.mazerunner.domain.Config
 import br.com.luminaspargere.mazerunner.domain.Injector
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Scalar
-import br.com.luminaspargere.mazerunner.domain.extensions.opencv.Size
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.bgr2hsv
-import br.com.luminaspargere.mazerunner.domain.extensions.opencv.blurred
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.draw
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.findContours
 import br.com.luminaspargere.mazerunner.domain.extensions.opencv.morphologicalProcessing
@@ -20,7 +18,7 @@ import org.opencv.core.Scalar
 
 private val arduinoControlRepository: ArduinoControlRepository by Injector.inject()
 
-suspend fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
+fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
     if (!ObjectTracking.isActive) {
         ObjectTracking.sendNoOp()
         return this
@@ -55,7 +53,6 @@ suspend fun Mat.activateObjectsTrackingAndControlRobot(): Mat {
 private fun Mat.trackObjects(range: Tuple2<Scalar, Scalar>): TrackedFrame {
     val (start, end) = range
     val filtered = this
-            .blurred(Size(7, 7))
             .bgr2hsv()
             .thresholdColorRanges(start toT end)
             .morphologicalProcessing()
