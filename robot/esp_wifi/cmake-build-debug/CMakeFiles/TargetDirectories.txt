@@ -1,3 +1,0 @@
-C:/Projetos/Faculdade/inteligencia-artificial/arduino/esp_wifi/cmake-build-debug/CMakeFiles/esp_wifi.dir
-C:/Projetos/Faculdade/inteligencia-artificial/arduino/esp_wifi/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Projetos/Faculdade/inteligencia-artificial/arduino/esp_wifi/cmake-build-debug/CMakeFiles/rebuild_cache.dir

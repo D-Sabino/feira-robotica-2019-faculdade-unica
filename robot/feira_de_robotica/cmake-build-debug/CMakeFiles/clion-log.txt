@@ -1,4 +1,0 @@
-C:\Users\icaro\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\191.7479.33\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=E:/Software/MinGW/bin/mingw32-make.exe -DCMAKE_C_COMPILER=E:/Software/MinGW/bin/gcc.exe -DCMAKE_CXX_COMPILER=E:/Software/MinGW/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" C:\Projetos\Faculdade\inteligencia-artificial\arduino\robot\feira_de_robotica
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/cmake-build-debug
