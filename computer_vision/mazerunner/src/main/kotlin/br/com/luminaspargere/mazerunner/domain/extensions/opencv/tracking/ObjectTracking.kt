@@ -62,11 +62,10 @@ object ObjectTracking : CoroutineScope by GlobalScope {
 
         println("src2dst => $src2Dst")
         println("tip2dst => $tip2Dst")
-        if (src2Dst > 85) {
-            if (tip2Dst > (src2Dst - 5)) arduinoControlRepository.turnRight()
-            else arduinoControlRepository.goForward()
-        } else {
-            throw NullPointerException()
-        }
+
+        if (src2Dst < 65 || tip2Dst < 40) throw NullPointerException()
+
+        if ((tip2Dst - 10) > src2Dst) arduinoControlRepository.turnRight()
+        else arduinoControlRepository.goForward()
     }
 }

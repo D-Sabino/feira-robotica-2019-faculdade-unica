@@ -267,6 +267,9 @@
 		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/src/espwifi.cpp">
 			<Option target="feira_de_robotica"/>
 		</Unit>
+		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/src/espwifi/espwifi.ino">
+			<Option target="feira_de_robotica"/>
+		</Unit>
 		<Unit filename="C:/Projetos/Faculdade/inteligencia-artificial/arduino/robot/feira_de_robotica/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

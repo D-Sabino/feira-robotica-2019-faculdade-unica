@@ -2,20 +2,20 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_PROGRAM" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_CLEAN" />
       <config projectName="feira_de_robotica" targetName="clion_esp_wifiv2" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_MONITOR" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOADFS" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_TEST" />
-      <config projectName="feira_de_robotica" targetName="DEBUG" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOAD" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPLOAD" />
+      <config projectName="feira_de_robotica" targetName="DEBUG" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_PROGRAM" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_BUILD" />
-      <config projectName="feira_de_robotica" targetName="feira_de_robotica" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_TEST" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_BUILD_VERBOSE" />
       <config projectName="feira_de_robotica" targetName="PLATFORMIO_UPDATE_ALL" />
-      <config projectName="feira_de_robotica" targetName="PLATFORMIO_CLEAN" />
+      <config projectName="feira_de_robotica" targetName="feira_de_robotica" />
+      <config projectName="feira_de_robotica" targetName="PLATFORMIO_MONITOR" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -49,7 +49,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/espwifi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
+            <state relative-caret-position="307">
               <caret line="138" selection-start-line="138" selection-end-line="138" />
             </state>
           </provider>
@@ -242,11 +242,12 @@
       <workItem from="1558651040731" duration="2199000" />
       <workItem from="1558994700364" duration="3135000" />
       <workItem from="1559086167246" duration="215000" />
+      <workItem from="1560372425648" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10191000" />
+    <option name="totallyTimeSpent" value="10218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -318,7 +319,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/espwifi.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
+        <state relative-caret-position="307">
           <caret line="138" selection-start-line="138" selection-end-line="138" />
         </state>
       </provider>
