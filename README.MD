@@ -2,7 +2,7 @@
 
 ## Descrição
 Projeto desenvolvido para a feira de robótica de 2019 conduzida
-na Faculdade Única de Ipating
+na Faculdade Única de Ipatinga
 
 ## Projetos
 - computer_vision
